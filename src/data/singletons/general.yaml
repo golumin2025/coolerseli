@@ -1,0 +1,9 @@
+businessName: Rocket Shell Portable Storage
+logo:
+  logo: /src/assets/images/general/logo/logo.webp
+  footerLogo: /src/assets/images/general/logo/footerLogo.webp
+contactInformation:
+  email: support@rocketshell.net
+  phone: '8888112212'
+  phoneDisplay: (888) 811-2212
+analyticsScripts: []

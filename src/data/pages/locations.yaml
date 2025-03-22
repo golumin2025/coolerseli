@@ -1,0 +1,36 @@
+title: Locations
+seoData: {}
+blocks:
+  - discriminant: singleHero
+    value:
+      bgImage: /src/assets/images/locations/blocks/0/value/bgImage.jpg
+      title: Locations
+  - discriminant: twoCol
+    value:
+      heading: Service Areas
+      image: /src/assets/images/locations/blocks/1/value/image.png
+      imagePlacement: right
+      description: >
+        Looking for storage units or a moving container? With locations across
+        California, we can help you move. Plus, you can store your belongings at
+        one of our secure Storage Centers. Our containers are also a convenient
+        solution for [**businesses**](/commerical-business)&nbsp;in search of
+        extra space or an affordable moving option.
+
+
+        See more information about each service area:
+
+
+        - [Los Angeles](/los-angeles-service-area)
+
+        - [Orange County](/orange-county-service-area)
+
+        - [San Bernardino](/san-bernardino-service-area)
+
+        - [San Diego](/san-diego-service-area)
+      button: {}
+      colors: '#0069e5/5'
+  - discriminant: reviewsSlider
+    value:
+      title: Rocket Shell Reviews
+      logos: []

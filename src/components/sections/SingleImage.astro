@@ -1,0 +1,38 @@
+---
+const { image, mobile, size } = Astro.props;
+import Image from "astro/components/Image.astro";
+---
+
+<div
+  class="overflow-hidden w-full md:max-w-[1100px] xl:max-w-[1380px] mx-auto max-w-full px-8 fade-up py-12 lg:py-24"
+  data-aos="fade-up"
+>
+  {/* Desktop Version */}
+  {
+    image && (
+      <div class="hidden md:block text-center">
+        <Image
+          src={image}
+          alt="Container Image"
+          class="w-full lg:w-3/5 mx-auto"
+          width={1920}
+          height={1080}
+        />
+      </div>
+    )
+  }
+
+  {
+    mobile && (
+      <div class="block md:hidden text-center">
+        <Image
+          src={mobile}
+          alt="Container Image with Dimensions"
+          class="w-full mx-auto"
+          width={1920}
+          height={1080}
+        />
+      </div>
+    )
+  }
+</div>

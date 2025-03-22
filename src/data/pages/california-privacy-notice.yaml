@@ -1,0 +1,161 @@
+title: California Privacy Notice
+seoData:
+  seoTitle: California Privacy Notice
+blocks:
+  - discriminant: singleHero
+    value:
+      bgImage: /src/assets/images/california-privacy-notice/blocks/0/value/bgImage.jpg
+      title: Rocket Shell's California Privacy Notice
+  - discriminant: twoCol
+    value:
+      heading: 'Last Updated: March, 2025'
+      imagePlacement: left
+      description: >
+        This California Privacy Notice (the “Privacy Notice” or “Notice”)
+        provides information to California residents about how **Rocket Shell
+        LLC** and its affiliates (“Rocket Shell,” “we,” “us,” “our”) collect,
+        use, and disclose Personal Information. For more details about our
+        privacy practices and any privacy rights you may have, please see our
+        [**Privacy Policy**.](/privacy-policy)
+
+
+        **Information We Collect From California Residents**
+
+
+        We may collect information that personally identifies, relates to,
+        describes, or is capable of being associated with you (“Personal
+        Information”), including:
+
+
+        • **Identifiers** – Name, mailing address, service address, email
+        address, phone number, driver’s license or other government-issued ID,
+        Rocket Shell account login credentials.
+
+
+        • **Protected Classification Characteristics** – Age, gender, marital
+        status, ethnicity, and other characteristics as defined by California or
+        federal law.
+
+
+        • **Demographic Information** – Language preferences, household income.
+
+
+        • **Commercial Information** – Payment details, purchase history,
+        service subscriptions, contract terms, account status, dwelling type and
+        size.
+
+
+        • **Internet or Network Activity** – Browsing history, IP address,
+        cookies, device information (e.g., device IDs, OS specifications).
+
+
+        • **Geolocation Data** – Precise and non-precise location information
+        from devices or website interactions.
+
+
+        • **Audio, Electronic, and Visual Data** – Call recordings, email
+        correspondence, chat transcripts, testimonials, images.
+
+
+        • **Employment-Related Information** – Employer, occupation.
+
+
+        • **Education Information** – Highest education level attained.
+
+
+        • **Inferences from Other Data** – Preferences, interests, behavioral
+        trends, credit scores, and related insights.
+
+
+        • **Sensitive Personal Information** – This may include social security
+        numbers, government-issued IDs, race, ethnicity, religion, precise
+        geolocation, and account login credentials.
+
+
+        **How We Use Personal Information**
+
+
+        We may use Personal Information for the following business purposes:
+
+
+        • **Account Management & Customer Support** – Processing applications,
+        creating accounts, providing service updates, and general customer
+        support.
+
+
+        • **Marketing & Market Research** – Sending promotions, personalizing
+        offers, conducting analytics and trend research.
+
+
+        • **Billing & Collections** – Managing payments, account balances, and
+        reporting to credit agencies.
+
+
+        • **Customer Engagement** – Administering surveys, contests, promotional
+        events, and direct customer interactions.
+
+
+        • **Website & Service Optimization** – Managing site functionality,
+        tracking user engagement, and utilizing analytics.
+
+
+        • **Eligibility & Pricing** – Assessing service qualifications and
+        determining applicable pricing.
+
+
+        • **Product Development & Research** – Enhancing services, improving
+        safety, and preventing misuse.
+
+
+        • **Business Operations** – Evaluating and improving services,
+        fulfilling contractual obligations, and enforcing rights.
+
+
+        • **Legal & Compliance** – Meeting regulatory requirements and industry
+        standards.
+
+
+        • **Security & Fraud Prevention** – Protecting against unauthorized
+        access, fraud, and cyber threats.
+
+
+        We use **Sensitive Personal Information** for:
+
+
+        • **Government-Issued IDs** – Service authentication, account
+        management, and compliance.
+
+
+        • **Demographic Data (Race, Ethnicity, Religion)** – Marketing insights
+        and consumer analytics.
+
+
+        • **Precise Geolocation** – Delivering location-based services and
+        offers.
+
+
+        • **Account Credentials** – Enabling secure access and fraud prevention.
+
+
+        We may also use your information as disclosed at the time of collection,
+        with your consent, or as otherwise permitted by California law.
+
+
+        **Third-Party Selling and Sharing**
+
+
+        Rocket Shell **does not sell** your Personal Information for monetary
+        compensation. However, we may share certain Personal Information with
+        third parties for purposes that could be classified as a “sale” under
+        California law. These third parties may use your information for
+        business activities, including marketing.
+
+
+        **Data Retention**
+
+
+        We retain Personal Information for as long as necessary to fulfill the
+        purposes outlined in this Notice, comply with legal obligations, and
+        support business operations, including marketing.
+      button: {}
+      colors: '#0069e5/5'

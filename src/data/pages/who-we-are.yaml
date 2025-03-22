@@ -1,0 +1,77 @@
+title: Who We Are
+seoData:
+  seoTitle: About Rocket Shell
+blocks:
+  - discriminant: singleHero
+    value:
+      bgImage: /src/assets/images/who-we-are/blocks/0/value/bgImage.jpg
+      title: Who We Are
+      description: >-
+        Locally owned and managed moving & storage company focused on customer
+        service
+  - discriminant: twoCol
+    value:
+      heading: Who We Are
+      image: /src/assets/images/who-we-are/blocks/1/value/image.jpg
+      imagePlacement: right
+      description: >
+        Rocket Shell is a locally owned and managed moving & storage company
+        focused on customer service. Our portable storage containers are
+        designed to offer affordable, safe, and secure portable storage needs
+        for residential and commercial customers.
+
+
+        Rocket Shell seeks to be a desirable, safe, and customer-oriented
+        company perfectly suited for moving & storing your valued personal and
+        business belongings.
+
+
+        We offer affordable, convenient, and secure portable storage operated by
+        professional staff who care about your belongings as much as you do.
+      button:
+        label: Get a Quote Today!
+        link: '#quote-form'
+      colors: '#0069e5/5'
+  - discriminant: twoCol
+    value:
+      heading: The Rocket Shell Advantage
+      imagePlacement: left
+      description: >
+        \**WE ARE THE BEST! PERIOD.\**
+
+
+        When it comes to convenient moving & storage, Rocket Shell does it all.
+        Our portable storage containers offer all the convenience & solutions
+        you’ve been looking for. We know how stressful, time-consuming, and
+        expensive it is to properly store or transport your belongings. That’s
+        why Rocket Shell designed our units to be safe, secure & affordable
+        while offering more than our competition
+
+
+        **Take a look at why Rocket Shell is the best:**
+
+
+        - Our dependability and availability is unmatched
+
+        - We have 5 locations to serve you, Rocket Fast!
+
+        - Our customer service is the **Best** in the industry
+
+        - You choose when you want your container, and where you want it dropped
+        off.
+
+        - Our containers are five inches off the ground, making it easy to load
+        while avoiding possible water damage
+
+        - Our containers are ventilated, reducing moisture and humidity that
+        contributes to mold and mildew
+
+        - Our containers are engineered with padded feet in order to protect
+        your driveway
+
+
+        &nbsp;Our goal is to make your experience with Rocket Shell as
+        convenient, easy, and affordable as possible.
+      button:
+        label: Get a quote
+      colors: '#0069e5/5'

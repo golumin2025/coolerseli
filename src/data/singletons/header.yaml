@@ -1,0 +1,33 @@
+menuItems:
+  - name: Moving
+    link: '#'
+    subMenu:
+      - name: 'Moving '
+        link: /portable-container-sizes
+      - name: Moving Overview
+        link: /moving-overview
+  - name: Storage
+    link: '#'
+    subMenu:
+      - name: Storage Container
+        link: /portable-container-sizes
+      - name: Storage Overview
+        link: /storage-overview
+  - name: Locations
+    link: /locations
+    subMenu:
+      - name: Los Angeles Area
+        link: /los-angeles-service-area
+      - name: Orange County Area
+        link: /orange-county-service-area
+      - name: San Bernardino Area
+        link: /san-bernardino-service-area
+      - name: San Diego Area
+        link: /san-diego-service-area
+  - name: Business
+    link: /commercial-business
+    subMenu: []
+button:
+  enable: true
+  label: (888) 811-2212
+  link: tel:(888) 811-2212

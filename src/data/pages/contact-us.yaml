@@ -1,0 +1,34 @@
+title: Contact Us
+seoData:
+  seoTitle: Contact Us
+blocks:
+  - discriminant: singleHero
+    value:
+      bgImage: /src/assets/images/contact-us/blocks/0/value/bgImage.jpg
+      title: Contact Our Team
+      description: We’re Dedicated to Meeting Your Self Storage Needs
+  - discriminant: twoCol
+    value:
+      image: /src/assets/images/contact-us/blocks/1/value/image.png
+      imagePlacement: right
+      description: |
+        ###### **Contact**
+
+        [(888)811-2212](\(888\)811-2212)\
+        [support@rocketshell.net](support@rocketshell.net)
+
+        ###### **Office Hours**
+
+        Monday to Friday 9:00 AM - 9:00 PM
+
+        Sat-Sun Closed
+
+        ###### **Facility Access Hours**
+
+        Open 24/7
+
+        ###### **Delivery Hours**
+
+        Monday to Saturday 6:00 AM - 6:00 PM
+      button: {}
+      colors: '#0069e5/5'
