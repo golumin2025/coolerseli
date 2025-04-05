@@ -19,7 +19,7 @@ blocks:
         belongings. That’s why Rocket Shell designed our units to be safe,
         secure and affordable while offering more than our competition.
       button: {}
-      colors: '#0069e5/5'
+      colors: "#0069e5/5"
   - discriminant: cards
     value:
       title: Storage Services
@@ -36,7 +36,7 @@ blocks:
             **portable storage container** for you to **load at your own pace**,
             then pick it up and transport it to one of our **secure, indoor
             storage facilities**, where you can access it anytime.
-  - discriminant: howPodsWork
+  - discriminant: twoColWithTabs
     value:
       heading: How Storage With Rocket Shell Works
       tabs:

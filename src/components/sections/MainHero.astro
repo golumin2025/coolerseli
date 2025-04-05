@@ -1,6 +1,6 @@
 ---
 import QuoteForm from "@components/forms/QuoteForm.svelte";
-const { Sliderimages } = Astro.props;
+const { sliderImages } = Astro.props;
 ---
 
 <div class="md:h-[700px] h-full relative">
@@ -10,7 +10,7 @@ const { Sliderimages } = Astro.props;
   <div class="swiper main-slider h-full">
     <div class="swiper-wrapper">
       {
-        Sliderimages.map((slide: any) => (
+        sliderImages.map((slide: any) => (
           <div class="swiper-slide">
             <div
               class="slide-content bg-cover bg-center h-full"
@@ -18,12 +18,14 @@ const { Sliderimages } = Astro.props;
             >
               <div class="custom-container mx-auto h-full flex items-end  px-4 md:px-8">
                 <div class="text-white md:w-1/2 py-12 ">
-                  <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 fade-up">
-                    {slide.title}
-                  </h1>
-                  <p class="text-lg md:text-xl font-medium fade-up">
-                    {slide.description}
-                  </p>
+                  {slide.title && (
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 fade-up">
+                      {slide.title}
+                    </h1>
+                  )}
+                  {slide.description && (
+                    <p class="text-lg md:text-xl font-medium fade-up">{slide.description}</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -61,11 +63,7 @@ const { Sliderimages } = Astro.props;
 
 <style>
   :root {
-    --gradient-direction: linear-gradient(
-      to bottom,
-      rgb(161, 39, 45, 1),
-      rgba(41, 147, 188, 0)
-    );
+    --gradient-direction: linear-gradient(to bottom, rgb(161, 39, 45, 1), rgba(41, 147, 188, 0));
   }
 
   @media (min-width: 768px) {

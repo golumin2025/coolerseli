@@ -11,6 +11,7 @@ blocks:
     value:
       heading: The Rocket Shell Advantage
       image: /src/assets/images/moving-overview/blocks/1/value/image.png
+      altTag: Containers on a street
       imagePlacement: left
       description: >
         When it comes to convenient moving and storage, Rocket Shell does it
@@ -21,7 +22,7 @@ blocks:
         secure and affordable while offering more than our competition
       button:
         label: Get A Quote
-      colors: '#0069e5/5'
+      colors: "#0069e5/5"
   - discriminant: cards
     value:
       title: Moving Services
@@ -39,7 +40,7 @@ blocks:
             transport your belongings **across the state or across the
             country**. You set the schedule, and we’ll customize the move to fit
             your needs.
-  - discriminant: howPodsWork
+  - discriminant: twoColWithTabs
     value:
       heading: How Moving With Rocket Shell Works
       tabs:
@@ -53,7 +54,7 @@ blocks:
               description: >-
                 Your first 30 days are included, then rent monthly if needed.
                 Need help loading? We can connect you with pros.
-            - title: 'Next stop: your new home'
+            - title: "Next stop: your new home"
               description: >-
                 We'll deliver to your new home whenever you're ready. Need
                 storage between homes? You have the option to keep your

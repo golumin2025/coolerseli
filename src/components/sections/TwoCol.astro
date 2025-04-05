@@ -3,8 +3,7 @@ import Button from "@components/ui/Button.astro";
 import ImageMod from "@components/ui/ImageMod.astro";
 import { marked } from "marked";
 
-const { heading, description, image, imagePlacement, colors, button } =
-  Astro.props;
+const { heading, description, image, altTag, imagePlacement, colors, button } = Astro.props;
 
 let renderDescription = marked.parse(description);
 ---
@@ -38,11 +37,7 @@ let renderDescription = marked.parse(description);
       </div>
     </div>
     <div class="w-full lg:w-1/2 h-full">
-      <ImageMod
-        src={image}
-        alt={"Featured Image"}
-        className="object-cover w-full h-full min-h-[200px]"
-      />
+      <ImageMod src={image} alt={altTag} className="object-cover w-full h-full min-h-[200px]" />
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-const { image, mobile, size } = Astro.props;
+const { altTag, image, mobile } = Astro.props;
 import Image from "astro/components/Image.astro";
 ---
 
@@ -13,7 +13,7 @@ import Image from "astro/components/Image.astro";
       <div class="hidden md:block text-center">
         <Image
           src={image}
-          alt="Container Image"
+          alt={altTag}
           class="w-full lg:w-3/5 mx-auto"
           width={1920}
           height={1080}
@@ -25,13 +25,7 @@ import Image from "astro/components/Image.astro";
   {
     mobile && (
       <div class="block md:hidden text-center">
-        <Image
-          src={mobile}
-          alt="Container Image with Dimensions"
-          class="w-full mx-auto"
-          width={1920}
-          height={1080}
-        />
+        <Image src={mobile} alt={altTag} class="w-full mx-auto" width={1920} height={1080} />
       </div>
     )
   }

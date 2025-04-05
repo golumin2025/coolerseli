@@ -17,8 +17,8 @@ blocks:
         storage options right on-site, helping your business stay organized and
         efficient.
       button: {}
-      colors: '#0069e5/5'
-  - discriminant: howPodsWork
+      colors: "#0069e5/5"
+  - discriminant: twoColWithTabs
     value:
       heading: How Rocket Shell Portable Storage Works
       tabs: []

@@ -1,26 +1,24 @@
 ---
 import { getCollection } from "astro:content";
 
+import Cards from "@components/sections/Cards.astro";
+import Faqs from "@components/sections/Faq.astro";
+import FeaturedImage from "@components/ui/FeaturedImage.astro";
+import FindYouFit from "@components/sections/FindYouFit.astro";
+import TwoColWithTabs from "@components/sections/TwoColWithTabs.astro";
 import Layout from "@layouts/Layout.astro";
 import MainHero from "@components/sections/MainHero.astro";
-import HowPodsWorks from "@components/sections/HowPodsWorks.astro";
 import Masonry from "@components/sections/Masonry.astro";
+import ProtectionConvenience from "@components/sections/ProtectionConvenience.astro";
 import ReviewsSlider from "@components/sections/ReviewsSlider.astro";
 import SingleHero from "@components/sections/SingleHero.astro";
-import FeaturedImage from "@components/ui/FeaturedImage.astro";
-import Faqs from "@components/sections/Faq.astro";
-import StorageOptions from "@components/sections/StorageOptions.astro";
-import ProtectionConvenience from "@components/sections/ProtectionConvenience.astro";
-import TwoCol from "@components/sections/TwoCol.astro";
-import Cards from "@components/sections/Cards.astro";
-import FindYouFit from "@components/sections/FindYouFit.astro";
 import SingleImage from "@components/sections/SingleImage.astro";
+import StorageOptions from "@components/sections/StorageOptions.astro";
+import TwoCol from "@components/sections/TwoCol.astro";
 
 export async function getStaticPaths() {
   const allpages = await getCollection("pages");
-  const filteredPages = allpages.filter(
-    ({ id }: { id: string }) => id !== "home"
-  );
+  const filteredPages = allpages.filter(({ id }: { id: string }) => id !== "home");
   return filteredPages.map(({ id, data }: { id: string; data: any }) => {
     return {
       params: { id },
@@ -41,23 +39,13 @@ const { data }: { data: any } = Astro.props;
       data?.blocks.map((item: any) => (
         <>
           {item.discriminant === "mainHero" && <MainHero {...item.value} />}
-          {item.discriminant === "howPodsWork" && (
-            <HowPodsWorks {...item.value} />
-          )}
-          {item.discriminant === "featuredImage" && (
-            <FeaturedImage {...item.value} />
-          )}
-          {item.discriminant === "reviewsSlider" && (
-            <ReviewsSlider {...item.value} />
-          )}
+          {item.discriminant === "twoColWithTabs" && <TwoColWithTabs {...item.value} />}
+          {item.discriminant === "featuredImage" && <FeaturedImage {...item.value} />}
+          {item.discriminant === "reviewsSlider" && <ReviewsSlider {...item.value} />}
           {item.discriminant === "faqs" && <Faqs {...item.value} />}
-          {item.discriminant === "masonaryGallery" && (
-            <Masonry {...item.value} />
-          )}
+          {item.discriminant === "masonaryGallery" && <Masonry {...item.value} />}
           {item.discriminant === "singleHero" && <SingleHero {...item.value} />}
-          {item.discriminant === "storageOptions" && (
-            <StorageOptions {...item.value} />
-          )}
+          {item.discriminant === "storageOptions" && <StorageOptions {...item.value} />}
           {item.discriminant === "findYouFit" && <FindYouFit {...item.value} />}
 
           {item.discriminant === "protectionConvenience" && (
@@ -65,9 +53,7 @@ const { data }: { data: any } = Astro.props;
           )}
           {item.discriminant === "twoCol" && <TwoCol {...item.value} />}
           {item.discriminant === "cards" && <Cards {...item.value} />}
-          {item.discriminant === "singleImage" && (
-            <SingleImage {...item.value} />
-          )}
+          {item.discriminant === "singleImage" && <SingleImage {...item.value} />}
         </>
       ))
     }

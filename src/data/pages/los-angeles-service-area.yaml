@@ -25,8 +25,8 @@ blocks:
 
         - And more…
       button: {}
-      colors: '#0069e5/5'
-  - discriminant: howPodsWork
+      colors: "#0069e5/5"
+  - discriminant: twoColWithTabs
     value:
       heading: How Rocket Shell Portable Storage Works
       tabs:
@@ -40,7 +40,7 @@ blocks:
               description: >-
                 Your first 30 days are included, then rent monthly if needed.
                 Need help loading? We can connect you with pros.
-            - title: 'Next stop: your new home'
+            - title: "Next stop: your new home"
               description: >-
                 We'll deliver to your new home whenever you're ready. Need
                 storage between homes? You have the option to keep your

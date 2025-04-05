@@ -1,13 +1,14 @@
 title: Home
-seoData: {}
+seoData:
+  seoTitle: Candor Storage Homepage
+  seoDescription: Homepage Description
 blocks:
   - discriminant: mainHero
     value:
-      Sliderimages:
-        - image: /images/home/home/blocks/0/value/Sliderimages/0/image.jpg
-          title: Your space, your schedule.
+      sliderImages:
+        - title: Your space, your schedule.
           description: Convenient moving and storage on your terms.
-  - discriminant: howPodsWork
+  - discriminant: twoColWithTabs
     value:
       heading: How Rocket Shell Portable Storage Works
       tabs:
@@ -47,27 +48,27 @@ blocks:
                 a secure Rocket Shell Portable Storage Facility where you can
                 retrieve items when needed.
 
-  - discriminant: masonaryGallery
-    value:
-      title: Real stories, real moves
-      images:
-        - /src/assets/images/home/blocks/2/value/images/0.webp
-        - /src/assets/images/home/blocks/2/value/images/1.webp
-        - /src/assets/images/home/blocks/2/value/images/2.webp
-        - /src/assets/images/home/blocks/2/value/images/3.webp
-        - /src/assets/images/home/blocks/2/value/images/4.webp
-        - /src/assets/images/home/blocks/2/value/images/5.webp
-        - /src/assets/images/home/blocks/2/value/images/6.webp
-        - /src/assets/images/home/blocks/2/value/images/7.webp
   - discriminant: featuredImage
     value:
-      image: /src/assets/images/home/blocks/3/value/image.jpg
+      image: /src/assets/images/home/blocks/2/value/image.jpg
+      altTag: Containers on asphalt
       title: 6 million moves
       description: |
         in 25 years
+  - discriminant: masonaryGallery
+    value:
+      title: Our Images
+      images:
+        - image: /src/assets/images/home/blocks/3/value/images/0/image.jpg
+          altTag: A cool container
+        - image: /src/assets/images/home/blocks/3/value/images/1/image.jpg
+          altTag: Another cool container
+        - image: /src/assets/images/home/blocks/3/value/images/2/image.jpg
+          altTag: A third cool container
   - discriminant: singleImage
     value:
       image: /images/home/blocks/4/value/image.png
+      altTag: A 3D Rendered box
       mobile: /images/home/blocks/4/value/mobile.png
   - discriminant: reviewsSlider
     value:
@@ -161,32 +162,3 @@ blocks:
             Portable Storage Storage Centers are clean, safe, dry, and many are
             climate-controlled. Rocket Shell Portable Storage has hundreds of
             convenient and safe locations across the country.
-  - discriminant: podsHelpingBintoGrid
-    value:
-      heading: Let Rocket Shell Portable Storage help you start fresh
-      cards:
-        - title: You don’t have to worry about driving
-          description: >-
-            You can cross 'learn how to drive a moving truck' off your list,
-            Rocket Shell Portable Storage will transport your container wherever
-            it needs to go.
-          size: wide
-        - title: Home-to-home without the hassle
-          description: >-
-            You have the option to store your belongings at our Storage Centers
-            while you're between homes.
-          size: normal
-        - title: Move now, pay later
-          description: Monthly financing is available to make your move fit your budget.
-          size: normal
-        - title: Ditch the moving deadline
-          description: Our monthly rentals mean you can tackle your move one box at a time.
-          size: normal
-        - title: Manage your move online
-          description: Track your move and easily update delivery or pickup dates.
-          size: wide
-        - title: 10x safer for your stuff
-          description: >-
-            Our content damage claims rate is less than 1/10th the moving
-            industry average.
-          size: normal

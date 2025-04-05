@@ -1,13 +1,12 @@
 import { fields } from "@keystatic/core";
 import {
   featuredImage,
-  howPodsWork,
+  twoColWithTabs,
   mainHero,
   findYouFit,
   reviewsSlider,
   faqs,
   masonaryGallery,
-  podsHelpingBintoGrid,
   singleHero,
   storageOptions,
   protectionConvenience,
@@ -27,10 +26,11 @@ export const pages = {
       },
     }),
     seoData: fields.object({
-      seoTitle: fields.text({ label: "SEO Title" }),
+      seoTitle: fields.text({ label: "SEO Title", validation: { isRequired: true } }),
       seoDescription: fields.text({
         label: "SEO Description",
         multiline: true,
+        validation: { isRequired: true },
       }),
       ogImage: fields.image({
         label: "Open Graph Image",
@@ -40,20 +40,19 @@ export const pages = {
     }),
     blocks: fields.blocks(
       {
-        mainHero,
-        howPodsWork,
-        featuredImage,
-        reviewsSlider,
-        findYouFit,
+        cards,
         faqs,
+        featuredImage,
+        findYouFit,
+        twoColWithTabs,
+        mainHero,
         masonaryGallery,
-        podsHelpingBintoGrid,
-        singleHero,
-        storageOptions,
-        singleImage,
         protectionConvenience,
+        reviewsSlider,
+        singleHero,
+        singleImage,
+        storageOptions,
         twoCol,
-        cards
       },
       { label: "Blocks" },
     ),

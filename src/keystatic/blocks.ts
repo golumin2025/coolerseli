@@ -3,7 +3,7 @@ import { fields } from "@keystatic/core";
 export const mainHero = {
   label: "Main Hero",
   schema: fields.object({
-    Sliderimages: fields.array(
+    sliderImages: fields.array(
       fields.object({
         image: fields.image({
           label: "Slider",
@@ -21,19 +21,20 @@ export const mainHero = {
   }),
 };
 
-export const howPodsWork = {
+export const twoColWithTabs = {
   label: "How Rocket Shell Portable Storage Works",
   schema: fields.object({
     heading: fields.text({ label: "Heading" }),
     tabs: fields.array(
       fields.object({
-        title: fields.text({ label: "Tab Title" }),
+        title: fields.text({ label: "Tab Title", validation: { isRequired: true } }),
         steps: fields.array(
           fields.object({
-            title: fields.text({ label: "Step Title" }),
+            title: fields.text({ label: "Step Title", validation: { isRequired: true } }),
             description: fields.text({
               label: "Step Description",
               multiline: true,
+              validation: { isRequired: true },
             }),
           }),
           {
@@ -85,7 +86,9 @@ export const featuredImage = {
       label: "Image",
       directory: "/src/assets/images/",
       publicPath: "/src/assets/images/",
+      validation: { isRequired: true },
     }),
+    altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
     title: fields.text({ label: "Title" }),
     description: fields.text({ label: "Description", multiline: true }),
   }),
@@ -132,54 +135,31 @@ export const masonaryGallery = {
   schema: fields.object({
     title: fields.text({ label: "Title" }),
     images: fields.array(
-      fields.image({
-        label: "Image",
-        directory: "/src/assets/images/",
-        publicPath: "/src/assets/images/",
+      fields.object({
+        image: fields.image({
+          label: "Image",
+          directory: "/src/assets/images/",
+          publicPath: "/src/assets/images/",
+          validation: { isRequired: true },
+        }),
+        altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
       }),
-      {
-        label: "Images",
-      },
     ),
   }),
 };
 
-export const podsHelpingBintoGrid = {
-  label: "Rocket Shell Portable Storage Helping Binto Grid",
-  schema: fields.object({
-    heading: fields.text({ label: "Heading" }),
-    cards: fields.array(
-      fields.object({
-        title: fields.text({ label: "Title" }),
-        description: fields.text({ label: "Description", multiline: true }),
-        image: fields.image({
-          label: "Image",
-          directory: "/src/assets/images",
-        }),
-        icon: fields.image({ label: "Icon", directory: "/src/assets/icons" }),
-        size: fields.select({
-          label: "Size",
-          options: [
-            { label: "Normal", value: "normal" },
-            { label: "Wide", value: "wide" },
-            { label: "Tall", value: "tall" },
-          ],
-          defaultValue: "normal",
-        }),
-      }),
-    ),
-  }),
-}
-
 export const singleHero = {
   label: "Single Hero",
   schema: fields.object({
-    bgImage: fields.image({ label: "BackGround Image", directory: "/src/assets/images", publicPath: "/src/assets/images" }),
+    bgImage: fields.image({
+      label: "BackGround Image",
+      directory: "/src/assets/images",
+      publicPath: "/src/assets/images",
+    }),
     title: fields.text({ label: "Title" }),
     description: fields.text({ label: "Description", multiline: true }),
-  })
-}
-
+  }),
+};
 
 export const storageOptions = {
   label: "Storage Options",
@@ -187,15 +167,21 @@ export const storageOptions = {
     title: fields.text({ label: "Title" }),
     cards: fields.array(
       fields.object({
-        image: fields.image({ label: "Image", directory: "/src/assets/images", publicPath: "/src/assets/images" }),
+        image: fields.image({
+          label: "Image",
+          directory: "/src/assets/images",
+          publicPath: "/src/assets/images",
+        }),
         size: fields.text({ label: "Size" }),
         dimension: fields.text({ label: "Dimension" }),
-        description: fields.array(fields.text({ label: "Description" }), { label: "Description Items" }),
+        description: fields.array(fields.text({ label: "Description" }), {
+          label: "Description Items",
+        }),
         link: fields.text({ label: "CTA Link" }),
       }),
-      { label: "Storage Containers", itemLabel: (item) => item.fields.size.value }
-    )
-  })
+      { label: "Storage Containers", itemLabel: (item) => item.fields.size.value },
+    ),
+  }),
 };
 
 export const protectionConvenience = {
@@ -204,20 +190,29 @@ export const protectionConvenience = {
     title: fields.text({ label: "Title" }),
     cards: fields.array(
       fields.object({
-        icon: fields.image({ label: "Icon", directory: "/src/assets/icons", publicPath: "/src/assets/icons" }),
+        icon: fields.image({
+          label: "Icon",
+          directory: "/src/assets/icons",
+          publicPath: "/src/assets/icons",
+        }),
         title: fields.text({ label: "Title" }),
         description: fields.text({ label: "Description", multiline: true }),
       }),
-      { label: "Storage Containers", itemLabel: (item) => item.fields.title.value }
-    )
-  })
+      { label: "Storage Containers", itemLabel: (item) => item.fields.title.value },
+    ),
+  }),
 };
 
 export const twoCol = {
   label: "Two Column",
   schema: fields.object({
     heading: fields.text({ label: "Heading" }),
-    image: fields.image({ label: "Image", directory: "/src/assets/images", publicPath: "/src/assets/images" }),
+    image: fields.image({
+      label: "Image",
+      directory: "/src/assets/images",
+      publicPath: "/src/assets/images",
+    }),
+    altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
     imagePlacement: fields.select({
       label: "Image Placement",
       options: [
@@ -226,7 +221,7 @@ export const twoCol = {
       ],
       defaultValue: "left",
     }),
-    description: fields.markdoc.inline({ label: "Description", }),
+    description: fields.markdoc.inline({ label: "Description" }),
     button: fields.object({
       label: fields.text({ label: "Button Label" }),
       link: fields.text({ label: "Button link" }),
@@ -234,8 +229,8 @@ export const twoCol = {
     colors: fields.select({
       label: "Color Scheme",
       options: [
-        { label: "#0069e5", value: "#0069e5" },
-        { label: "#0069e5 with 5 opacity", value: "#0069e5/5" },
+        { label: "Blue", value: "#0069e5" },
+        { label: "Blue with opacity", value: "#0069e5/5" },
       ],
       defaultValue: "#0069e5/5",
     }),
@@ -248,16 +243,18 @@ export const cards = {
     title: fields.text({ label: "Title" }),
     cards: fields.array(
       fields.object({
-        image: fields.image({ label: "Image", directory: "/src/assets/images", publicPath: "/src/assets/images" }),
+        image: fields.image({
+          label: "Image",
+          directory: "/src/assets/images",
+          publicPath: "/src/assets/images",
+        }),
         title: fields.text({ label: "Title" }),
-        description: fields.markdoc.inline({ label: "Description", }),
+        description: fields.markdoc.inline({ label: "Description" }),
       }),
-      { label: "Storage Containers", itemLabel: (item) => item.fields.title.value }
-    )
-  })
+      { label: "Storage Containers", itemLabel: (item) => item.fields.title.value },
+    ),
+  }),
 };
-
-
 
 export const singleImage = {
   label: "Single Image",
@@ -266,11 +263,14 @@ export const singleImage = {
       label: "Image",
       directory: "/public/images/",
       publicPath: "/images/",
+      validation: { isRequired: true },
     }),
+    altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
     mobile: fields.image({
       label: "Image",
       directory: "/public/images/",
       publicPath: "/images/",
+      validation: { isRequired: true },
     }),
   }),
 };
