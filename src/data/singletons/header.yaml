@@ -1,13 +1,13 @@
 menuItems:
   - name: Moving
-    link: '#'
+    link: "#"
     subMenu:
-      - name: 'Moving '
+      - name: "Moving "
         link: /portable-container-sizes
       - name: Moving Overview
         link: /moving-overview
   - name: Storage
-    link: '#'
+    link: "#"
     subMenu:
       - name: Storage Container
         link: /portable-container-sizes
@@ -28,6 +28,3 @@ menuItems:
     link: /commercial-business
     subMenu: []
 button:
-  enable: true
-  label: (888) 811-2212
-  link: tel:(888) 811-2212

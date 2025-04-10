@@ -1,19 +1,19 @@
 import { fields } from "@keystatic/core";
 import {
-  featuredImage,
-  twoColWithTabs,
-  mainHero,
-  findYouFit,
-  reviewsSlider,
-  faqs,
-  masonaryGallery,
-  singleHero,
-  storageOptions,
-  protectionConvenience,
-  twoCol,
   cards,
+  faqs,
+  featuredImage,
+  findYouFit,
+  mainHero,
+  masonaryGallery,
+  protectionConvenience,
+  reviewsSlider,
+  serviceAreas,
+  singleHero,
   singleImage,
-  serviceAreas
+  storageOptions,
+  twoCol,
+  twoColWithTabs,
 } from "@keystatic/blocks";
 
 export const pages = {
@@ -24,6 +24,7 @@ export const pages = {
     title: fields.slug({
       name: {
         label: "Page Title",
+        validation: { isRequired: true },
       },
     }),
     seoData: fields.object({
@@ -54,7 +55,7 @@ export const pages = {
         singleImage,
         storageOptions,
         twoCol,
-        serviceAreas
+        serviceAreas,
       },
       { label: "Blocks" },
     ),

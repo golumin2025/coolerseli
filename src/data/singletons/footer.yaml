@@ -1,38 +1,40 @@
 navitems:
   - title: About Rocket Shell Portable Storage
     links:
-      - name: About Us
-        url: /who-we-are
-      - name: Contact Us
-        url: /contact-us
+      - label: About Us
+        link: /who-we-are
+      - label: Contact Us
+        link: /contact-us
   - title: Services
     links:
-      - name: Moving
-        url: /moving-overview
-      - name: Storage
-        url: /storage-overview
-      - name: Rocket Shell Portable Storage Containers
-        url: /portable-container-sizes
+      - label: Moving
+        link: /moving-overview
+      - label: Storage
+        link: /storage-overview
+      - label: Rocket Shell Portable Storage Containers
+        link: /portable-container-sizes
   - title: Resources
     links:
-      - name: FAQs
-        url: '#'
-      - name: Locations
-        url: /locations
-      - name: What To Expect When Moving
-        url: /storage-tips
+      - label: FAQs
+        link: '#'
+      - label: Locations
+        link: /locations
+      - label: What To Expect When Moving
+        link: /storage-tips
 socialLinks:
-  - icon: /src/assets/images/social/socialLinks/0/icon.png
-    url: >-
+  - label: Google
+    icon: /src/assets/images/social/socialLinks/0/icon.png
+    link: >-
       https://www.google.com/search?q=rocket+shell+portable+storage&ei=bX8FYu7IIpeOwbkP2M6D8As&ved=0ahUKEwius5adhvb1AhUXRzABHVjnAL4Q4dUDCA4&uact=5&oq=rocket+shell+portable+storage&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEB46BwgAEEcQsAM6CggAEEcQsAMQyQM6BggAEAcQHkoECEEYAEoECEYYAFDRIVibLmCnL2gBcAF4AIABe4gBuQaSAQM2LjOYAQCgAQHIAQjAAQE&sclient=gws-wiz
-  - icon: /src/assets/images/social/socialLinks/1/icon.png
-    url: https://www.yelp.com/biz/rocket-shell-winchester
+  - label: Yelp
+    icon: /src/assets/images/social/socialLinks/1/icon.png
+    link: https://www.yelp.com/biz/rocket-shell-winchester
 legal:
-  - title: Web Accessibility
+  - label: Web Accessibility
     link: /web-accessibility
-  - title: Terms & Conditions
+  - label: Terms & Conditions
     link: /terms-and-conditions
-  - title: California Privacy Notice
+  - label: California Privacy Notice
     link: /california-privacy-notice
-  - title: Privacy Policy
+  - label: Privacy Policy
     link: /privacy-policy

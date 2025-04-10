@@ -12,6 +12,7 @@ export const blogs = {
     title: fields.slug({
       name: {
         label: "Blog Title",
+        validation: { isRequired: true },
       },
     }),
     blogImage: fields.image({
@@ -19,16 +20,17 @@ export const blogs = {
       directory: "/public/images/",
       publicPath: "/images/",
     }),
-    publicationDate: fields.text({ label: "Published On" }),
+    publicationDate: fields.text({ label: "Published On", validation: { isRequired: true } }),
     draft: fields.checkbox({
       label: "Draft",
-      defaultValue: false,
+      defaultValue: true,
     }),
     seoData: fields.object({
-      seoTitle: fields.text({ label: "SEO Title" }),
+      seoTitle: fields.text({ label: "SEO Title", validation: { isRequired: true } }),
       seoDescription: fields.text({
         label: "SEO Description",
         multiline: true,
+        validation: { isRequired: true },
       }),
       ogImage: fields.image({
         label: "Open Graph Image",

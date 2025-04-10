@@ -8,11 +8,13 @@ export const reviews = {
     name: fields.slug({
       name: {
         label: "Name",
+        validation: { isRequired: true },
       },
     }),
     content: fields.text({
       label: "Review",
       multiline: true,
+      validation: { isRequired: true },
     }),
   },
 } as const;
