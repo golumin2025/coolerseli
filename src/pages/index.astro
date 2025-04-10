@@ -13,6 +13,7 @@ import SingleHero from "@components/sections/SingleHero.astro";
 import SingleImage from "@components/sections/SingleImage.astro";
 import StorageOptions from "@components/sections/StorageOptions.astro";
 import TwoCol from "@components/sections/TwoCol.astro";
+import Locations from "@components/sections/Locations.astro";
 
 import { getEntry } from "astro:content";
 const homePage = await getEntry("pages", "home");
@@ -36,6 +37,7 @@ const homePage = await getEntry("pages", "home");
         {item.discriminant === "twoCol" && <TwoCol {...item.value} />}
         {item.discriminant === "cards" && <Cards {...item.value} />}
         {item.discriminant === "singleImage" && <SingleImage {...item.value} />}
+        {item.discriminant === "serviceAreas" && <Locations {...item.value} />}
       </>
     ))
   }

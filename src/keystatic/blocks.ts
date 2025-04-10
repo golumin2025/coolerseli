@@ -274,3 +274,31 @@ export const singleImage = {
     }),
   }),
 };
+
+
+export const serviceAreas = {
+  label: "Service Areas",
+  schema: fields.object({
+    title: fields.text({ label: "Title" }),
+    sectionTitle: fields.text({ label: "Section Title" }),
+    locations: fields.array(
+      fields.object({
+        title: fields.text({ label: "Title" }),
+        link: fields.text({ label: "Link" }),
+      }),
+      {
+        label: "Locations",
+        itemLabel: (props) => props.fields.title.value,
+      },
+    ),
+    colTwoTitle: fields.text({ label: "Column Two Title" }),
+    colTwoDescription: fields.text({
+      label: "Column Two Description",
+      multiline: true,
+    }),
+    button: fields.object({
+      title: fields.text({ label: "Button Title" }),
+      link: fields.text({ label: "Button Link" }),
+    }),
+  }),
+};

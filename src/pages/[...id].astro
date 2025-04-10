@@ -15,6 +15,7 @@ import SingleHero from "@components/sections/SingleHero.astro";
 import SingleImage from "@components/sections/SingleImage.astro";
 import StorageOptions from "@components/sections/StorageOptions.astro";
 import TwoCol from "@components/sections/TwoCol.astro";
+import Locations from "@components/sections/Locations.astro";
 
 export async function getStaticPaths() {
   const allpages = await getCollection("pages");
@@ -54,6 +55,8 @@ const { data }: { data: any } = Astro.props;
           {item.discriminant === "twoCol" && <TwoCol {...item.value} />}
           {item.discriminant === "cards" && <Cards {...item.value} />}
           {item.discriminant === "singleImage" && <SingleImage {...item.value} />}
+          {item.discriminant === "serviceAreas" && <Locations {...item.value} />}
+
         </>
       ))
     }

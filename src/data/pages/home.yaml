@@ -162,3 +162,44 @@ blocks:
             Portable Storage Storage Centers are clean, safe, dry, and many are
             climate-controlled. Rocket Shell Portable Storage has hundreds of
             convenient and safe locations across the country.
+  - discriminant: serviceAreas
+    value:
+      title: 'NC Locations Served Include But Not Limited To:'
+      sectionTitle: Locations
+      locations:
+        - title: Raleigh
+          link: link 1
+        - title: Cary
+          link: link 2
+        - title: Apex
+          link: link 3
+        - title: Sanford
+          link: link 3
+        - title: Carrboro
+          link: link 5
+        - title: Graham
+          link: link 6
+        - title: ' Durham'
+          link: link 7
+        - title: ' Hillsborough'
+          link: link 8
+        - title: ' Morrisville'
+          link: link 9
+        - title: ' Holly Springs'
+          link: link 10
+        - title: ' Efland'
+          link: link 11
+        - title: ' Chapel Hill'
+          link: link 12
+        - title: ' Moncure'
+          link: link 13
+        - title: Mebane
+          link: link 14
+      colTwoTitle: Submit a Quote! or Call Us!
+      colTwoDescription: >-
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aliquid
+        illo quod magni ipsam veritatis iusto quidem nihil, sed rem velit itaque
+        non cumque assumenda, aliquam beatae dolores hic qui?
+      button:
+        title: Get a Quote Today
+        link: '#'

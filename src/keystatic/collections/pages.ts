@@ -13,6 +13,7 @@ import {
   twoCol,
   cards,
   singleImage,
+  serviceAreas
 } from "@keystatic/blocks";
 
 export const pages = {
@@ -53,6 +54,7 @@ export const pages = {
         singleImage,
         storageOptions,
         twoCol,
+        serviceAreas
       },
       { label: "Blocks" },
     ),
