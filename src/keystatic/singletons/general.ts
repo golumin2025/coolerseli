@@ -4,7 +4,7 @@ export const general = {
   label: "General Settings",
   path: "src/data/singletons/general",
   schema: {
-    businessName: fields.text({ label: "Business Name" }),
+    businessName: fields.text({ label: "Business Name", validation: { isRequired: true }}),
     logo: fields.object(
       {
         logo: fields.image({
@@ -16,6 +16,7 @@ export const general = {
           label: "Favicon",
           directory: "/src/assets/images/general",
           publicPath: "/src/assets/images/general/",
+          validation: { isRequired: true }
         }),
         footerLogo: fields.image({
           label: "Footer Logo",
@@ -31,14 +32,17 @@ export const general = {
       {
         email: fields.text({
           label: "Email Address",
+          validation: { isRequired: true }
         }),
         phone: fields.text({
           label: "Phone Number",
           description: "This will be used in elements like tel:",
+          validation: { isRequired: true }
         }),
         phoneDisplay: fields.text({
           label: "Phone Number Display",
           description: "Phone number as it appears in the user interface",
+          validation: { isRequired: true }
         }),
       },
       {
@@ -66,3 +70,4 @@ export const general = {
     ),
   },
 };
+

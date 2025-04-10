@@ -8,8 +8,9 @@ export const email = {
       {
         imageUrl: fields.text({
           label: "Image URL",
+          validation: { isRequired: true }
         }),
-        altTag: fields.text({ label: "Alt Text" }),
+        altTag: fields.text({ label: "Alt Text", validation: { isRequired: true }}),
       },
       {
         label: "Email Logo",
@@ -21,16 +22,18 @@ export const email = {
       label: "Email Address",
       description:
         "This is the email address from which emails are sent. Please do not change this without first confirming with the development team.",
+      validation: { isRequired: true }
     }),
     fromEmailName: fields.text({
       label: "Email Name",
       description:
         "This is that will show in emails sent from the website in the 'From' field.",
+      validation: { isRequired: true }
     }),
     adminEmailRecipients: fields.array(
       fields.object({
-        name: fields.text({ label: "Name" }),
-        email: fields.text({ label: "Email" }),
+        name: fields.text({ label: "Name", validation: { isRequired: true }}),
+        email: fields.text({ label: "Email", validation: { isRequired: true }}),
       }),
       {
         label: "Admin Email Recipients",
@@ -39,8 +42,8 @@ export const email = {
     ),
     clientEmailRecipientsBcc: fields.array(
       fields.object({
-        name: fields.text({ label: "Name" }),
-        email: fields.text({ label: "Email" }),
+        name: fields.text({ label: "Name", validation: { isRequired: true }}),
+        email: fields.text({ label: "Email", validation: { isRequired: true }}),
       }),
       {
         label: "Client Email BCC Recipients",

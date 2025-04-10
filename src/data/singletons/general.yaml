@@ -1,9 +1,10 @@
-businessName: Rocket Shell Portable Storage
+businessName: Go Lumin
 logo:
-  logo: /src/assets/images/general/logo/logo.webp
-  footerLogo: /src/assets/images/general/logo/footerLogo.webp
+  logo: /src/assets/images/general/logo/logo.png
+  favicon: /src/assets/images/general/logo/favicon.png
+  footerLogo: /src/assets/images/general/logo/footerLogo.png
 contactInformation:
-  email: support@rocketshell.net
-  phone: '8888112212'
-  phoneDisplay: (888) 811-2212
+  email: hello@golumin.io
+  phone: '2695326248'
+  phoneDisplay: 269-532-6248
 analyticsScripts: []
