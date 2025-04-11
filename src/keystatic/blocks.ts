@@ -7,8 +7,9 @@ export const mainHero = {
       fields.object({
         image: fields.image({
           label: "Slider",
-          directory: "/public/images/home",
-          publicPath: "/images/home",
+          directory: "/public/images/home/",
+          publicPath: "/images/home/",
+          validation: { isRequired: true },
         }),
         title: fields.text({ label: "Title" }),
         description: fields.text({ label: "Description", multiline: true }),
@@ -22,7 +23,7 @@ export const mainHero = {
 };
 
 export const twoColWithTabs = {
-  label: "How Rocket Shell Portable Storage Works",
+  label: "Two Column With Tabs",
   schema: fields.object({
     heading: fields.text({ label: "Heading" }),
     tabs: fields.array(
@@ -97,7 +98,7 @@ export const featuredImage = {
 export const reviewsSlider = {
   label: "Reviews Slider",
   schema: fields.object({
-    title: fields.text({ label: "title" }),
+    title: fields.text({ label: "Title" }),
     logos: fields.array(
       fields.object({
         image: fields.image({
@@ -119,8 +120,8 @@ export const faqs = {
     title: fields.text({ label: "Title" }),
     faqs: fields.array(
       fields.object({
-        question: fields.text({ label: "Question" }),
-        answer: fields.markdoc.inline({ label: "Answer" }),
+        question: fields.text({ label: "Question", validation: { isRequired: true } }),
+        answer: fields.markdoc.inline({ label: "Answer", validation: { isRequired: true } }),
       }),
       {
         label: "FAQs",
@@ -144,6 +145,7 @@ export const masonaryGallery = {
         }),
         altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
       }),
+      { label: "Images", itemLabel: (item) => item.fields.altTag.value },
     ),
   }),
 };
@@ -274,7 +276,6 @@ export const singleImage = {
     }),
   }),
 };
-
 
 export const serviceAreas = {
   label: "Service Areas",

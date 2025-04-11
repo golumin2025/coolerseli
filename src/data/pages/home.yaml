@@ -6,7 +6,8 @@ blocks:
   - discriminant: mainHero
     value:
       sliderImages:
-        - title: Your space, your schedule.
+        - image: /images/home/home/blocks/0/value/sliderImages/0/image.jpg
+          title: Your space, your schedule.
           description: Convenient moving and storage on your terms.
   - discriminant: twoColWithTabs
     value:

@@ -13,10 +13,10 @@ export default config({
     kind: import.meta.env.DEV ? "local" : "cloud",
   },
   cloud: {
-    project: 'rocket-shell-storage/pods-marketing',
+    project: "rocket-shell-storage/pods-marketing",
   },
   ui: {
-    brand: { name: "Rocket Shell Storage" },
+    brand: { name: "Lumin Candor" },
   },
   collections: {
     blogs: collection(blogs),

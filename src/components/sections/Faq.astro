@@ -16,12 +16,16 @@ function renderText(data: string) {
     class="flex justify-between relative custom-container mx-auto !max-w-[900px] lg:flex-row flex-col items-start gap-8"
   >
     <div class="w-full">
-      <h2
-        class="mb-12 text-secondary text-center sm:text-4xl text-3xl font-bold"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        set:html={title}
-      />
+      {
+        title && (
+          <h2
+            class="mb-12 text-secondary text-center sm:text-4xl text-3xl font-bold"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            set:html={title}
+          />
+        )
+      }
       <dl class="space-y-5">
         {
           faqs.map((faq: Faq, index: number) => (
@@ -65,10 +69,7 @@ function renderText(data: string) {
                 id={`faq-${index}`}
                 aria-labelledby={`faq-button-${index}`}
               >
-                <div
-                  class="pt-3  prose text-text/80"
-                  set:html={renderText(faq.answer)}
-                />
+                <div class="pt-3  prose text-text/80" set:html={renderText(faq.answer)} />
               </dd>
             </div>
           ))
