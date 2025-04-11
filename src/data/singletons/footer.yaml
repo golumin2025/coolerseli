@@ -2,9 +2,9 @@ navitems:
   - title: About Box Protect
     links:
       - label: About Us
-        link: /who-we-are
+        link: /about
       - label: Contact Us
-        link: /contact-us
+        link: /contact
   - title: Services
     links:
       - label: Moving
@@ -19,8 +19,6 @@ navitems:
         link: '#'
       - label: Locations
         link: /locations
-      - label: What To Expect When Moving
-        link: /storage-tips
 socialLinks:
   - label: Facebook
     icon: /src/assets/images/social/socialLinks/0/icon.png
