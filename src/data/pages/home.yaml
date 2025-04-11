@@ -33,25 +33,25 @@ blocks:
               description: >-
                 Store onsite or we can move your box where you need it.  Tell us
                 when you're done.
+  - discriminant: singleImage
+    value:
+      image: /src/assets/images/home/blocks/2/value/image.jpg
+      altTag: Shipping container details and dimensions
+      mobile: /images/home/blocks/2/value/mobile.jpg
   - discriminant: cards
     value:
       title: ABOUT US
       cards:
-        - image: /src/assets/images/home/blocks/2/value/cards/0/image.jpg
+        - image: /src/assets/images/home/blocks/3/value/cards/0/image.jpg
           title: Our Boxes
           description: >
             Top quality steel containers with non-marring rubber feet &
             complimentary padlock.&nbsp; All boxes are 8x16'.
-        - image: /src/assets/images/home/blocks/2/value/cards/1/image.avif
+        - image: /src/assets/images/home/blocks/3/value/cards/1/image.avif
           title: Our Mule System
           description: >
             Containers can be placed in hard to reach areas of (almost) any
             ground cover with our 0 point turn mule system.
-  - discriminant: singleImage
-    value:
-      image: /src/assets/images/home/blocks/3/value/image.jpg
-      altTag: Shipping container details and dimensions
-      mobile: /images/home/blocks/3/value/mobile.jpg
   - discriminant: featuredImage
     value:
       image: /src/assets/images/home/blocks/4/value/image.avif
