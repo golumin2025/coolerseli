@@ -1,30 +1,23 @@
 menuItems:
   - name: Moving
-    link: "#"
+    link: '#'
     subMenu:
-      - name: "Moving "
+      - name: 'Moving '
         link: /portable-container-sizes
       - name: Moving Overview
-        link: /moving-overview
+        link: /moving
   - name: Storage
-    link: "#"
+    link: '#'
     subMenu:
       - name: Storage Container
         link: /portable-container-sizes
       - name: Storage Overview
-        link: /storage-overview
+        link: /storage
   - name: Locations
     link: /locations
-    subMenu:
-      - name: Los Angeles Area
-        link: /los-angeles-service-area
-      - name: Orange County Area
-        link: /orange-county-service-area
-      - name: San Bernardino Area
-        link: /san-bernardino-service-area
-      - name: San Diego Area
-        link: /san-diego-service-area
+    subMenu: []
   - name: Business
     link: /commercial-business
     subMenu: []
 button:
+  discriminant: none
