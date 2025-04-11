@@ -17,7 +17,14 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), markdoc(), keystatic(), partytown(), sitemap(), svelte()],
+  integrations: [
+    react(),
+    markdoc(),
+    keystatic(),
+    partytown(),
+    sitemap(),
+    svelte(),
+  ],
 
   vite: {
     plugins: [tailwindcss()],
@@ -27,6 +34,6 @@ export default defineConfig({
       },
     },
   },
-  output: "server",
+  output: "static",
   adapter: netlify(),
 });

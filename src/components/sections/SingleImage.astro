@@ -1,32 +1,38 @@
 ---
 const { altTag, image, mobile } = Astro.props;
-import Image from "astro/components/Image.astro";
+import ImageMod from "@components/ui/ImageMod.astro";
 ---
 
 <div
-  class="overflow-hidden w-full md:max-w-[1100px] xl:max-w-[1380px] mx-auto max-w-full px-8 fade-up py-12 lg:py-24"
-  data-aos="fade-up"
+    class="overflow-hidden w-full md:max-w-[1100px] xl:max-w-[1380px] mx-auto max-w-full px-8 fade-up py-12 lg:py-24"
+    data-aos="fade-up"
 >
-  {/* Desktop Version */}
-  {
-    image && (
-      <div class="hidden md:block text-center">
-        <Image
-          src={image}
-          alt={altTag}
-          class="w-full lg:w-3/5 mx-auto"
-          width={1920}
-          height={1080}
-        />
-      </div>
-    )
-  }
+    {/* Desktop Version */}
+    {
+        image && (
+            <div class="hidden md:block text-center">
+                <ImageMod
+                    src={image}
+                    alt={altTag}
+                    className="w-full lg:w-3/5 mx-auto"
+                    width={1920}
+                    height={1080}
+                />
+            </div>
+        )
+    }
 
-  {
-    mobile && (
-      <div class="block md:hidden text-center">
-        <Image src={mobile} alt={altTag} class="w-full mx-auto" width={1920} height={1080} />
-      </div>
-    )
-  }
+    {
+        mobile && (
+            <div class="block md:hidden text-center">
+                <ImageMod
+                    src={mobile}
+                    alt={altTag}
+                    className="w-full mx-auto"
+                    width={1920}
+                    height={1080}
+                />
+            </div>
+        )
+    }
 </div>

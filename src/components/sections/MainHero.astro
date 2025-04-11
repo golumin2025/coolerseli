@@ -1,5 +1,6 @@
 ---
 import QuoteForm from "@components/forms/QuoteForm.svelte";
+import ImageMod from "@components/ui/ImageMod.astro";
 const { sliderImages } = Astro.props;
 ---
 
@@ -13,10 +14,12 @@ const { sliderImages } = Astro.props;
                 sliderImages.map((slide: any) => (
                     <div class="swiper-slide">
                         <div class="slide-content h-full relative">
-                            <img
+                            <ImageMod
                                 src={slide.image}
                                 alt={slide.title || "Slider image"}
-                                class="w-full h-full object-cover absolute inset-0"
+                                className="w-full h-full object-cover absolute inset-0"
+                                width={1920}
+                                height={1080}
                             />
                             <div class="gradient-overlay absolute inset-0" />
                             <div class="custom-container mx-auto h-full flex items-end px-4 md:px-8 relative z-10">
