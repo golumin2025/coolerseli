@@ -2,9 +2,9 @@
 
 @plugin "@tailwindcss/typography";
 @theme {
-  --color-primary: #a1272d;
-  --color-secondary: #2d2d2d;
-  --color-background: #0069e5;
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-background: var(--background-color);
 }
 .custom-container {
   @apply lg:max-w-[1100px] xl:max-w-[1380px] mx-auto  max-w-full px-8;

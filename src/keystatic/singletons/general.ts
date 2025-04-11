@@ -28,6 +28,21 @@ export const general = {
         label: "Site Images",
       },
     ),
+    primaryColor: fields.text({
+      label: "Primary Color",
+      description: "The primary color used throughout the site",
+      validation: { isRequired: true },
+    }),
+    secondaryColor: fields.text({
+      label: "Secondary Color",
+      description: "The secondary color used throughout the site",
+      validation: { isRequired: true },
+    }),
+    backgroundColor: fields.text({
+      label: "Background Color",
+      description: "The background color used throughout the site",
+      validation: { isRequired: true },
+    }),
     contactInformation: fields.object(
       {
         email: fields.text({
