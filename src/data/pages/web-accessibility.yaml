@@ -1,37 +1,41 @@
 title: Web Accessibility
 seoData:
-  seoTitle: Web Accessibility
+  seoTitle: BoxProtect Website Accessibility Statement
+  seoDescription: >-
+    BoxProtect LLC is committed to website accessibility for all users. Learn
+    about our efforts and how to report issues or request assistance.
 blocks:
   - discriminant: singleHero
     value:
-      title: Rocket Shell's Web Accessibility
+      title: BoxProtect's Web Accessibility
   - discriminant: twoCol
     value:
+      heading: Website Accessibility
+      altTag: Website Accessibility
       imagePlacement: left
       description: >
-        **Rocket Shell LLC** is committed to ensuring our website is accessible
-        to all users, including individuals with disabilities. We continuously
-        work to improve accessibility and usability across our site.
+        ```
+
+        BoxProtect LLC is committed to ensuring our website is accessible to all
+        users, including individuals with disabilities. We continuously work to
+        improve accessibility and usability across our site.
 
 
         We welcome your feedback on these efforts. If you experience any
         difficulty accessing, using, or navigating our website, please contact
-        us at [**support@rocketshell.net**](mailto:support@rocketshell.net).
-        When reaching out, please provide:
-
+        us at admin@boxprotect.com. When reaching out, please provide:
 
         • The URL of the page where you encountered the issue
 
-
         • A brief description of the accessibility concern
-
 
         • The type of assistive technology or browser you were using
 
 
         If you are unable to access any of our services online, please call us
-        at [**+1 (714) 798-4964**](tel:714-798-4964) or email us at
-        [**support@rocketshell.net**](mailto:support@rocketshell.net), and we
-        will work to provide an alternative way to assist you.
+        at 1-800-BOX-3333 or email us at admin@boxprotect.com, and we will work
+        to provide an alternative way to assist you.
+
+        ```
       button: {}
       colors: '#0069e5/5'
