@@ -1,5 +1,5 @@
 navitems:
-  - title: About Lumin Candor
+  - title: About Box Protect
     links:
       - label: About Us
         link: /who-we-are
@@ -11,7 +11,7 @@ navitems:
         link: /moving-overview
       - label: Storage
         link: /storage-overview
-      - label: Rocket Shell Portable Storage Containers
+      - label: Portable Storage Containers
         link: /portable-container-sizes
   - title: Resources
     links:
@@ -22,13 +22,12 @@ navitems:
       - label: What To Expect When Moving
         link: /storage-tips
 socialLinks:
-  - label: Google
+  - label: Facebook
     icon: /src/assets/images/social/socialLinks/0/icon.png
-    link: >-
-      https://www.google.com/search?q=rocket+shell+portable+storage&ei=bX8FYu7IIpeOwbkP2M6D8As&ved=0ahUKEwius5adhvb1AhUXRzABHVjnAL4Q4dUDCA4&uact=5&oq=rocket+shell+portable+storage&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEB46BwgAEEcQsAM6CggAEEcQsAMQyQM6BggAEAcQHkoECEEYAEoECEYYAFDRIVibLmCnL2gBcAF4AIABe4gBuQaSAQM2LjOYAQCgAQHIAQjAAQE&sclient=gws-wiz
-  - label: Yelp
+    link: https://www.facebook.com/profile.php?id=61558039267678
+  - label: Instagram
     icon: /src/assets/images/social/socialLinks/1/icon.png
-    link: https://www.yelp.com/biz/rocket-shell-winchester
+    link: https://www.instagram.com/boxprotectstorage/
 legal:
   - label: Web Accessibility
     link: /web-accessibility
