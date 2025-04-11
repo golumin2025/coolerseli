@@ -16,7 +16,7 @@ export default config({
     project: "box-protect/marketing",
   },
   ui: {
-    brand: { name: "Lumin Candor" },
+    brand: { name: "BoxProtect CMS" },
   },
   collections: {
     blogs: collection(blogs),
