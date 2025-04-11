@@ -13,7 +13,7 @@ export default config({
     kind: import.meta.env.DEV ? "local" : "cloud",
   },
   cloud: {
-    project: "rocket-shell-storage/pods-marketing",
+    project: "box-protect/marketing",
   },
   ui: {
     brand: { name: "Lumin Candor" },
