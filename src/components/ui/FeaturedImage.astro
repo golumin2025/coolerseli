@@ -5,17 +5,21 @@ const { altTag, image, title, description } = Astro.props;
 ---
 
 <section class="relative my-12">
-  <ImageMod
-    src={image}
-    alt={altTag}
-    width={1920}
-    height={900}
-    className="max-h-[700px] object-cover w-full"
-  />
-  <div class="absolute inset-0 bg-black/20"></div>
+    <ImageMod
+        src={image}
+        alt={altTag}
+        width={1920}
+        height={900}
+        className="h-[700px] object-cover w-full"
+    />
+    <div class="absolute inset-0 bg-black/20"></div>
 
-  <div class="absolute top-1/2 right-16 transform -translate-y-1/2 max-w-md">
-    {title && <h2 class="text-6xl text-white font-semibold mb-4">{title}</h2>}
-    {description && <p class="text-2xl ml-8 text-white">{description}</p>}
-  </div>
+    <div class="absolute top-1/2 right-16 transform -translate-y-1/2 max-w-md">
+        {
+            title && (
+                <h2 class="text-6xl text-white font-semibold mb-4">{title}</h2>
+            )
+        }
+        {description && <p class="text-2xl ml-8 text-white">{description}</p>}
+    </div>
 </section>
