@@ -8,11 +8,9 @@ navitems:
   - title: Services
     links:
       - label: Moving
-        link: /moving-overview
+        link: /moving
       - label: Storage
-        link: /storage-overview
-      - label: Portable Storage Containers
-        link: /portable-container-sizes
+        link: /storage
   - title: Resources
     links:
       - label: FAQs
