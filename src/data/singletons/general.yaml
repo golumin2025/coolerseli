@@ -3,10 +3,10 @@ logo:
   logo: /src/assets/images/general/logo/logo.png
   favicon: /src/assets/images/general/logo/favicon.png
   footerLogo: /src/assets/images/general/logo/footerLogo.png
-primaryColor: 161,39,45
-secondaryColor: 45,45,45
-tertiaryColor: 41,146,188
-backgroundColor: 0,105,229
+primaryColor: "109,88,249\t"
+secondaryColor: "172,34,237\t"
+tertiaryColor: "101,101,101\t"
+backgroundColor: "109,88,249\t"
 contactInformation:
   email: hello@golumin.io
   phone: '2695326248'

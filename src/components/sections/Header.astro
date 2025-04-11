@@ -7,10 +7,7 @@ const nav = await getEntry("singletons", "header");
 const general = await getEntry("singletons", "general");
 ---
 
-<header
-  class="relative z-[990000] shadow-md transition-all duration-300"
-  id="navbar"
->
+<header class="relative z-[990000] shadow-md transition-all duration-300" id="navbar">
   <div class="">
     <div class="flex custom-container justify-between items-center py-4">
       <div class="flex items-center space-x-4">
@@ -18,11 +15,7 @@ const general = await getEntry("singletons", "general");
         <button class="lg:hidden text-black text-3xl" id="menuBtn">☰</button>
         <!-- Logo -->
         <a href="/" class="text-xl font-bold text-gray-800">
-          <ImageMod
-            src={general.data.logo.logo}
-            alt="Logo"
-            className="max-w-32"
-          />
+          <ImageMod src={general.data.logo.logo} alt="Logo" className="max-w-32" />
         </a>
       </div>
       <!-- Desktop Navigation -->
@@ -30,10 +23,7 @@ const general = await getEntry("singletons", "general");
         {
           nav?.data.menuItems.map((item) =>
             !item.subMenu?.length ? (
-              <a
-                href={item.link}
-                class="text-black underline-text font-medium hover:text-primary"
-              >
+              <a href={item.link} class="text-black underline-text font-medium hover:text-primary">
                 {item.name}
               </a>
             ) : (
@@ -58,16 +48,13 @@ const general = await getEntry("singletons", "general");
                 </button>
                 <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   {item.subMenu.map((sub) => (
-                    <a
-                      href={sub.link}
-                      class="block px-4 py-2 text-black hover:text-primary"
-                    >
+                    <a href={sub.link} class="block px-4 py-2 text-black hover:text-primary">
                       {sub.name}
                     </a>
                   ))}
                 </div>
               </div>
-            )
+            ),
           )
         }
       </nav>
@@ -106,9 +93,7 @@ const general = await getEntry("singletons", "general");
                     fill="#000000"
                   />
                 </svg>
-                <span class="md:block hidden">
-                  {general.data.contactInformation.phoneDisplay}
-                </span>
+                <span class="md:block hidden">{general.data.contactInformation.phoneDisplay}</span>
               </a>
             </div>
           )
@@ -126,9 +111,7 @@ const general = await getEntry("singletons", "general");
   <div
     class="bg-white ml-auto w-72 h-full p-4 shadow-lg transition-transform overflow-y-auto duration-300"
   >
-    <button class="absolute top-4 right-4 text-black text-2xl" id="closeMenu"
-      >✕</button
-    >
+    <button class="absolute top-4 right-4 text-black text-2xl" id="closeMenu">✕</button>
 
     <nav class="mt-12 border-b border-black/20 divide-y divide-black/20">
       {
@@ -154,21 +137,15 @@ const general = await getEntry("singletons", "general");
                   />
                 </svg>
               </button>
-              <div
-                class="hidden bg-white divide-y divide-black/20"
-                data-dropdown-menu={index}
-              >
+              <div class="hidden bg-white divide-y divide-black/20" data-dropdown-menu={index}>
                 {item.subMenu.map((sub) => (
-                  <a
-                    href={sub.link}
-                    class="block px-6 py-2 text-black hover:bg-gray-100"
-                  >
+                  <a href={sub.link} class="block px-6 py-2 text-black hover:bg-gray-100">
                     {sub.name}
                   </a>
                 ))}
               </div>
             </div>
-          )
+          ),
         )
       }
     </nav>
@@ -180,7 +157,7 @@ const general = await getEntry("singletons", "general");
   .underline-text {
     display: inline-block;
     padding-bottom: 2px;
-    background-image: linear-gradient(#ce202f, #ce202f);
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
     background-position: 0 100%; /*OR bottom left*/
     background-size: 0% 2px;
     background-repeat: no-repeat;

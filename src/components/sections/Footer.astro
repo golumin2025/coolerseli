@@ -9,16 +9,10 @@ const footerData = footer.data;
 <footer class="bg-[#f7f7f7] text-dark py-12 lg:py-16">
   <div class="custom-container mx-auto flex flex-wrap justify-between">
     <div class="w-full flex justify-center mb-6">
-      <ImageMod
-        src={general.data.logo.footerLogo}
-        alt="Logo"
-        className="h-24 object-contain"
-      />
+      <ImageMod src={general.data.logo.footerLogo} alt="Logo" className="h-24 object-contain" />
     </div>
 
-    <div
-      class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full my-14 items-start gap-4"
-    >
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full my-14 items-start gap-4">
       {
         footerData.navitems.map((section) => (
           <div class="w-full  mb-6">
@@ -63,9 +57,8 @@ const footerData = footer.data;
       }
     </div>
     <div class="w-full text-center text-sm mt-6 text-dark">
-      © 2006 - {new Date().getFullYear()} Rocket Shell Portable Storage Enterprises
-      LLC. All rights reserved. Rocket Shell Portable Storage® is a registered trademark
-      of Rocket Shell Portable Storage Enterprises LLC.
+      © 2006 - {new Date().getFullYear()}
+      {general.data.businessName}. All rights reserved.
     </div>
   </div>
 </footer>
