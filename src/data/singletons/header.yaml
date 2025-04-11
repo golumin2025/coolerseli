@@ -1,18 +1,10 @@
 menuItems:
   - name: Moving
-    link: '#'
-    subMenu:
-      - name: 'Moving '
-        link: /portable-container-sizes
-      - name: Moving Overview
-        link: /moving
+    link: /moving
+    subMenu: []
   - name: Storage
-    link: '#'
-    subMenu:
-      - name: Storage Container
-        link: /portable-container-sizes
-      - name: Storage Overview
-        link: /storage
+    link: /storage
+    subMenu: []
   - name: Locations
     link: /locations
     subMenu: []
