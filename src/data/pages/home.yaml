@@ -1,7 +1,9 @@
 title: Home
 seoData:
-  seoTitle: Candor Storage Homepage
-  seoDescription: Homepage Description
+  seoTitle: BoxProtect LLC - Secure Storage & Protection Solutions
+  seoDescription: >-
+    BoxProtect LLC offers reliable and secure storage solutions for your
+    valuable items. Explore our range of protective boxes and services.
 blocks:
   - discriminant: mainHero
     value:
