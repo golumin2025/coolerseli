@@ -1,16 +1,23 @@
 title: Privacy Policy
 seoData:
-  seoTitle: Privacy Policy
+  seoTitle: BoxProtect LLC - Privacy Policy
+  seoDescription: >-
+    Learn how BoxProtect LLC collects, uses, and protects your personal
+    information. Read our privacy policy to understand your rights and our data
+    practices.
 blocks:
   - discriminant: singleHero
     value:
       title: Rocket Shell's Privacy Policy
   - discriminant: twoCol
     value:
-      heading: 'Updated: 10-29-2024'
+      heading: Privacy Policy
+      altTag: Privacy Policy
       imagePlacement: left
       description: >
-        This Privacy Policy describes how Rocket Shell ("we," "us," or "our")
+        ```
+
+        This Privacy Policy describes how BoxProtect LLC ("we," "us," or "our")
         collects, uses, and shares information from individuals who visit our
         website, use our services, or otherwise interact with us ("Consumers").
         We are committed to protecting your privacy and ensuring the security of
@@ -22,7 +29,7 @@ blocks:
         practices described in this Privacy Policy.
 
 
-        **1. Information We Collect**
+        1. Information We Collect
 
 
         We collect the following types of information:
@@ -34,12 +41,12 @@ blocks:
         information you choose to provide.
 
 
-        **We may use your Personal Data to contact you with newsletters,
+        We may use your Personal Data to contact you with newsletters,
         marketing, and/or promotional materials that may be of interest to you.
         Message frequency may vary. Message & data rates may apply. You may opt
         out of receiving any, or all, of these communications from us by
-        contacting us, or by responding *STOP* or *UNSUBSCRIBE* to any SMS
-        message we send.**
+        contacting us, or by responding STOP or UNSUBSCRIBE to any SMS message
+        we send.
 
 
         Automatically Collected Information: We may also collect certain
@@ -52,32 +59,30 @@ blocks:
         use of cookies in our Cookie Policy.
 
 
-        **2. How We Use Your Information**
+        2. How We Use Your Information
 
 
         We use the information we collect for the following purposes:
 
 
         Providing Services: We may use your information to provide you with our
-        salon services and to respond to your inquiries.
-
+        services and to respond to your inquiries.
 
         Communication: We may use your contact information to send you important
         updates and promotional materials. You can opt out of receiving
         promotional communications at any time.
 
-
         Website Improvement: We may use your information to analyze and improve
         our website's functionality, content, and user experience.
 
 
-        **3. Sharing Your Information**
+        3. Sharing Your Information
 
 
         We do not share or sell your Personally Identifiable Information to
         third parties for marketing purposes. **No mobile information will be
         shared with third parties/affiliates for marketing/promotional
-        purposes.__**However, we may share your information in the following
+        purposes.** However, we may share your information in the following
         circumstances:
 
 
@@ -86,10 +91,8 @@ blocks:
         functions, such as payment processing, customer support, and website
         maintenance.
 
-
         Compliance with Legal Requirements: We may disclose your information
         when required by law or to comply with legal processes.
-
 
         Sale or Merger: In the event of a sale, merger, or acquisition of our
         business, we may transfer your information to the acquiring company, but
@@ -97,7 +100,7 @@ blocks:
         Policy.
 
 
-        **4. Your Choices and Rights**
+        4. Your Choices and Rights
 
 
         You have the following rights regarding your information:
@@ -106,20 +109,17 @@ blocks:
         Access: You can request access to the personal information we hold about
         you.
 
-
         Rectification: You can request corrections to inaccuracies in your
         personal information.
 
-
         Deletion: You can request the deletion of your personal information,
         subject to legal obligations.
-
 
         Data Portability: You can request a copy of your personal information in
         a structured, machine-readable format.
 
 
-        **5. Changes to this Privacy Policy**
+        5. Changes to this Privacy Policy
 
 
         We may update this Privacy Policy from time to time to reflect changes
@@ -130,22 +130,21 @@ blocks:
         informed about how we are protecting your information.
 
 
-        **6. Contact Us**
+        6. Contact Us
 
 
         If you have any questions or concerns about this Privacy Policy or our
         data practices, please contact our corporate office at:
 
 
-        ***Rocket Shell***
+        BoxProtect LLC
 
+        [Insert BoxProtect Address Here]
 
-        ***30075 Grand Ave, Winchester CA 92595***
+        Telephone: 1-800-BOX-3333
 
+        Email: admin@boxprotect.com
 
-        ***Telephone:&nbsp;[+1 (714) 798-4964](tel:714-798-4964)***
-
-
-        ***Email: [support@rocketshell.net](mailto:support@rocketshell.net)***
+        ```
       button: {}
       colors: '#0069e5/5'
