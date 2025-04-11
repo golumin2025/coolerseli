@@ -7,162 +7,82 @@ blocks:
     value:
       sliderImages:
         - image: /src/assets/images/home/blocks/0/value/sliderImages/0/image.jpg
-          title: Your space, your schedule.
-          description: Convenient moving and storage on your terms.
+          title: FAST, NO HASSLE STORAGE 1-800-BOX-3333
+          description: BoxProtect Serves the Raleigh/Durham Triangle & Surrounding Counties
   - discriminant: twoColWithTabs
     value:
-      heading: How Rocket Shell Portable Storage Works
+      heading: How It Works
       tabs:
         - title: Moving
           steps:
-            - title: We deliver your container
-              description: >+
-                Choose from 8', 12', or 16' weather-resistant containers,
-                delivered right to your door.
-
-            - title: Pack at your own pace
-              description: >+
-                Your first 30 days are included, then rent monthly if needed.
-                Need help loading? We can connect you with pros.
-
-            - title: 'Next stop: your new home'
-              description: >+
-                We'll deliver to your new home whenever you're ready. Need
-                storage between homes? You have the option to keep your
-                container at one of our secure Storage Centers.
-
+            - title: Order Your Box
+              description: We deliver portable storage for your content to you.
+            - title: Pack Your Content
+              description: You pack the content at your own pace.  Rental is monthly.
+            - title: Move it
+              description: >
+                Tell us when you're done and we can move your box where you need
+                it.  
         - title: Storage
           steps:
-            - title: We deliver your container
-              description: >+
-                Choose from 8', 12', or 16' weather-resistant containers,
-                delivered right to your door.
-
-            - title: Load at your own pace
-              description: >+
-                Your first 30 days are included, then rent monthly if needed.
-                Need help loading? We can connect you with pros.
-
-            - title: Store at home or with us
-              description: >+
-                Keep your container at home for 24/7 access, or we'll move it to
-                a secure Rocket Shell Portable Storage Facility where you can
-                retrieve items when needed.
-
+            - title: Order Your Box
+              description: We deliver portable storage for your content to you.
+            - title: Pack Your Content
+              description: You pack the content at your own pace.  Rental is monthly.
+            - title: Store Onsite
+              description: >-
+                Store onsite or we can move your box where you need it.  Tell us
+                when you're done.
+  - discriminant: cards
+    value:
+      title: ABOUT US
+      cards:
+        - image: /src/assets/images/home/blocks/2/value/cards/0/image.jpg
+          title: Our Boxes
+          description: >
+            Top quality steel containers with non-marring rubber feet &
+            complimentary padlock.&nbsp; All boxes are 8x16'.
+        - image: /src/assets/images/home/blocks/2/value/cards/1/image.avif
+          title: Our Mule System
+          description: >
+            Containers can be placed in hard to reach areas of (almost) any
+            ground cover with our 0 point turn mule system.
+  - discriminant: singleImage
+    value:
+      image: /src/assets/images/home/blocks/3/value/image.jpg
+      altTag: Shipping container details and dimensions
+      mobile: /images/home/blocks/3/value/mobile.jpg
   - discriminant: featuredImage
     value:
-      image: /src/assets/images/home/blocks/2/value/image.jpg
-      altTag: Containers on asphalt
-      title: 6 million moves
-      description: |
-        in 25 years
+      image: /src/assets/images/home/blocks/4/value/image.avif
+      altTag: WHO WE ARE
+      title: WHO WE ARE
+      description: >-
+        We are the Triangle's portable storage company for commercial clients:
+        restoration, pack outs, builders, property managers and investors. We
+        offer 8x16' metal containers for onsite storage of various content.  It
+        is our promise that working with BoxProtect means fast service and easy
+        ordering.  Once clients are setup in our system, they can text or call
+        us directly to order storage boxes at a moment's notice.  Our goal is to
+        be flexible and make your life easy.
   - discriminant: masonaryGallery
     value:
       title: Our Images
       images:
-        - image: /src/assets/images/home/blocks/3/value/images/0/image.jpg
-          altTag: A cool container
-        - image: /src/assets/images/home/blocks/3/value/images/1/image.jpg
-          altTag: Another cool container
-        - image: /src/assets/images/home/blocks/3/value/images/2/image.jpg
-          altTag: A third cool container
-  - discriminant: singleImage
-    value:
-      image: /src/assets/images/home/blocks/4/value/image.png
-      altTag: A 3D Rendered box
-      mobile: /images/home/blocks/4/value/mobile.png
+        - image: /src/assets/images/home/blocks/5/value/images/0/image.jpg
+          altTag: Box Protect portable storage
+        - image: /src/assets/images/home/blocks/5/value/images/1/image.jpg
+          altTag: Box Protect portable storage moving
+        - image: /src/assets/images/home/blocks/5/value/images/2/image.jpg
+          altTag: Box Protect portable storage loading
+        - image: /src/assets/images/home/blocks/5/value/images/3/image.jpg
+          altTag: Box Protect portable storage open container
+        - image: /src/assets/images/home/blocks/5/value/images/4/image.jpg
+          altTag: Box Protect portable storage loading on driveway
   - discriminant: reviewsSlider
     value:
-      title: 'Rated #1 in moving and customer service'
-      logos:
-        - image: /src/assets/images/home/blocks/5/value/logos/0/image.avif
-        - image: /src/assets/images/home/blocks/5/value/logos/1/image.avif
-        - image: /src/assets/images/home/blocks/5/value/logos/2/image.avif
-        - image: /src/assets/images/home/blocks/5/value/logos/3/image.avif
-  - discriminant: faqs
-    value:
-      title: Faqs
-      faqs:
-        - question: How do Billing & Payments Work with Rocket Shell Portable Storage?
-          answer: >
-            **No deposits, no obligations:** Like most hotel reservations, you
-            can reserve your Rocket Shell Portable Storage container with a
-            credit card – no payments are due until 7 days before your container
-            delivery.
-
-
-            **Easy cancellation:** If you change your dates or change your mind,
-            it's no worries! Visit pods.com/cancel to view our full cancellation
-            policy.
-
-
-            **No surprise costs:** We're transparent with our pricing in your
-            detailed quote, which you'll receive via email.
-
-
-            **Avoid late fees:** Your containers are rented by the month, so you
-            can take your time loading and unloading – without worrying about
-            extra fees that can come with a truck rental.
-
-
-            **Flexible scheduling:** With Rocket Shell Portable Storage there
-            are no rigid schedules. If your plans change you can login to
-            my.pods.com to update your schedule.
-        - question: >-
-            How long do I have to load or unload my Rocket Shell Portable
-            Storage container?
-          answer: >
-            Take your time - your Rocket Shell Portable Storage container rental
-            is monthly, giving you the flexibility to pack and unload at your
-            own pace. Your 30-day billing cycle starts when we deliver your
-            container.
-        - question: How are Rocket Shell Portable Storage Moving prices calculated?
-          answer: >
-            We personalize your moving quote based on your unique journey:
-
-
-            - Pick-up and delivery locations
-
-            - Travel distance
-
-            - Time needed for your move
-
-            - Size and number of containers
-
-
-            [Get your custom quote in minutes](https://booking.pods.com/home)
-            and see why millions choose Rocket Shell Portable Storage for a
-            smoother move.
-        - question: How are Rocket Shell Portable Storage Storage prices calculated?
-          answer: >
-            Your Rocket Shell Portable Storage storage quote is personalized
-            based on your unique needs, including:
-
-
-            - Your location
-
-            - Length of storage and time of year
-
-            - Container size and quantity
-
-            - Storage location - at your property or in a secure, indoor,
-            climate-controlled Rocket Shell Portable Storage Storage Center
-
-            - Special offers and promotions available in your area
-
-
-            [Get your custom quote in minutes](https://booking.pods.com/home),
-            or explore our current [discount offers](https://www.pods.com/promo)
-            to start saving.
-        - question: >-
-            Are Rocket Shell Portable Storage Storage Centers
-            climate-controlled?
-          answer: >
-            If you keep your things at one of our Storage Centers, they'll
-            receive the best and most secure treatment available. Rocket Shell
-            Portable Storage Storage Centers are clean, safe, dry, and many are
-            climate-controlled. Rocket Shell Portable Storage has hundreds of
-            convenient and safe locations across the country.
+      title: Hear from our customers
+      logos: []
   - discriminant: serviceAreas
     value:
       title: 'NC Locations Served Include But Not Limited To:'
@@ -197,10 +117,6 @@ blocks:
         - title: Mebane
           link: link 14
       colTwoTitle: Submit a Quote! or Call Us!
-      colTwoDescription: >-
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aliquid
-        illo quod magni ipsam veritatis iusto quidem nihil, sed rem velit itaque
-        non cumque assumenda, aliquam beatae dolores hic qui?
       button:
         title: Get a Quote Today
         link: '#'
