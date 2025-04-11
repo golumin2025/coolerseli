@@ -7,8 +7,8 @@ export const mainHero = {
       fields.object({
         image: fields.image({
           label: "Slider",
-          directory: "/public/images/home/",
-          publicPath: "/images/home/",
+          directory: "/src/assets/images/",
+          publicPath: "/src/assets/images/",
           validation: { isRequired: true },
         }),
         title: fields.text({ label: "Title" }),
@@ -28,10 +28,16 @@ export const twoColWithTabs = {
     heading: fields.text({ label: "Heading" }),
     tabs: fields.array(
       fields.object({
-        title: fields.text({ label: "Tab Title", validation: { isRequired: true } }),
+        title: fields.text({
+          label: "Tab Title",
+          validation: { isRequired: true },
+        }),
         steps: fields.array(
           fields.object({
-            title: fields.text({ label: "Step Title", validation: { isRequired: true } }),
+            title: fields.text({
+              label: "Step Title",
+              validation: { isRequired: true },
+            }),
             description: fields.text({
               label: "Step Description",
               multiline: true,
@@ -120,8 +126,14 @@ export const faqs = {
     title: fields.text({ label: "Title" }),
     faqs: fields.array(
       fields.object({
-        question: fields.text({ label: "Question", validation: { isRequired: true } }),
-        answer: fields.markdoc.inline({ label: "Answer", validation: { isRequired: true } }),
+        question: fields.text({
+          label: "Question",
+          validation: { isRequired: true },
+        }),
+        answer: fields.markdoc.inline({
+          label: "Answer",
+          validation: { isRequired: true },
+        }),
       }),
       {
         label: "FAQs",
@@ -143,7 +155,10 @@ export const masonaryGallery = {
           publicPath: "/src/assets/images/",
           validation: { isRequired: true },
         }),
-        altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
+        altTag: fields.text({
+          label: "Alt Tag",
+          validation: { isRequired: true },
+        }),
       }),
       { label: "Images", itemLabel: (item) => item.fields.altTag.value },
     ),
@@ -181,7 +196,10 @@ export const storageOptions = {
         }),
         link: fields.text({ label: "CTA Link" }),
       }),
-      { label: "Storage Containers", itemLabel: (item) => item.fields.size.value },
+      {
+        label: "Storage Containers",
+        itemLabel: (item) => item.fields.size.value,
+      },
     ),
   }),
 };
@@ -200,7 +218,10 @@ export const protectionConvenience = {
         title: fields.text({ label: "Title" }),
         description: fields.text({ label: "Description", multiline: true }),
       }),
-      { label: "Storage Containers", itemLabel: (item) => item.fields.title.value },
+      {
+        label: "Storage Containers",
+        itemLabel: (item) => item.fields.title.value,
+      },
     ),
   }),
 };
@@ -253,7 +274,10 @@ export const cards = {
         title: fields.text({ label: "Title" }),
         description: fields.markdoc.inline({ label: "Description" }),
       }),
-      { label: "Storage Containers", itemLabel: (item) => item.fields.title.value },
+      {
+        label: "Storage Containers",
+        itemLabel: (item) => item.fields.title.value,
+      },
     ),
   }),
 };
@@ -263,13 +287,13 @@ export const singleImage = {
   schema: fields.object({
     image: fields.image({
       label: "Image",
-      directory: "/public/images/",
-      publicPath: "/images/",
+      directory: "/src/assets/images",
+      publicPath: "/src/assets/images",
       validation: { isRequired: true },
     }),
     altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
     mobile: fields.image({
-      label: "Image",
+      label: "Mobile Image",
       directory: "/public/images/",
       publicPath: "/images/",
       validation: { isRequired: true },

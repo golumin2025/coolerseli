@@ -4,7 +4,10 @@ export const general = {
   label: "General Settings",
   path: "src/data/singletons/general",
   schema: {
-    businessName: fields.text({ label: "Business Name", validation: { isRequired: true }}),
+    businessName: fields.text({
+      label: "Business Name",
+      validation: { isRequired: true },
+    }),
     logo: fields.object(
       {
         logo: fields.image({
@@ -16,7 +19,7 @@ export const general = {
           label: "Favicon",
           directory: "/src/assets/images/general",
           publicPath: "/src/assets/images/general/",
-          validation: { isRequired: true }
+          validation: { isRequired: true },
         }),
         footerLogo: fields.image({
           label: "Footer Logo",
@@ -30,34 +33,39 @@ export const general = {
     ),
     primaryColor: fields.text({
       label: "Primary Color",
-      description: "The primary color used throughout the site",
+      description: "Use rgb() formate eg: 255,0,0",
       validation: { isRequired: true },
     }),
     secondaryColor: fields.text({
       label: "Secondary Color",
-      description: "The secondary color used throughout the site",
+      description: "Use rgb() formate eg: 255,0,0",
+      validation: { isRequired: true },
+    }),
+    tertiaryColor: fields.text({
+      label: "Tertiary Color",
+      description: "Use rgb() formate eg: 255,0,0",
       validation: { isRequired: true },
     }),
     backgroundColor: fields.text({
       label: "Background Color",
-      description: "The background color used throughout the site",
+      description: "Use rgb() formate eg: 255,0,0",
       validation: { isRequired: true },
     }),
     contactInformation: fields.object(
       {
         email: fields.text({
           label: "Email Address",
-          validation: { isRequired: true }
+          validation: { isRequired: true },
         }),
         phone: fields.text({
           label: "Phone Number",
           description: "This will be used in elements like tel:",
-          validation: { isRequired: true }
+          validation: { isRequired: true },
         }),
         phoneDisplay: fields.text({
           label: "Phone Number Display",
           description: "Phone number as it appears in the user interface",
-          validation: { isRequired: true }
+          validation: { isRequired: true },
         }),
       },
       {
@@ -85,4 +93,3 @@ export const general = {
     ),
   },
 };
-

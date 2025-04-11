@@ -8,7 +8,8 @@ interface Props {
     description: string;
 }
 const generalSettings = await getEntry("singletons", "general");
-const { primaryColor, secondaryColor, backgroundColor } = generalSettings.data;
+const { primaryColor, secondaryColor, backgroundColor, tertiaryColor } =
+    generalSettings.data;
 
 const { title, description } = Astro.props;
 ---
@@ -23,12 +24,14 @@ const { title, description } = Astro.props;
                 primaryColor,
                 secondaryColor,
                 backgroundColor,
+                tertiaryColor,
             }}
         >
             :root {
                 --primary-color: var(--primaryColor);
                 --secondary-color: var(--secondaryColor);
                 --background-color: var(--backgroundColor);
+                --tertiary-color: var(--tertiaryColor);
             }
         </style>
     </head>

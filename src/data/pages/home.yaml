@@ -6,7 +6,7 @@ blocks:
   - discriminant: mainHero
     value:
       sliderImages:
-        - image: /images/home/home/blocks/0/value/sliderImages/0/image.jpg
+        - image: /src/assets/images/home/blocks/0/value/sliderImages/0/image.jpg
           title: Your space, your schedule.
           description: Convenient moving and storage on your terms.
   - discriminant: twoColWithTabs
@@ -68,7 +68,7 @@ blocks:
           altTag: A third cool container
   - discriminant: singleImage
     value:
-      image: /images/home/blocks/4/value/image.png
+      image: /src/assets/images/home/blocks/4/value/image.png
       altTag: A 3D Rendered box
       mobile: /images/home/blocks/4/value/mobile.png
   - discriminant: reviewsSlider
