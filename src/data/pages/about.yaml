@@ -1,0 +1,35 @@
+title: Who We Are
+seoData:
+  seoTitle: About BoxProtect LLC - Secure Storage Solutions
+  seoDescription: >-
+    Learn more about BoxProtect LLC, our mission, and our commitment to
+    providing reliable and secure storage solutions for your valuable items.
+blocks:
+  - discriminant: singleHero
+    value:
+      bgImage: /src/assets/images/about/blocks/0/value/bgImage.jpg
+      title: Who We Are
+  - discriminant: twoCol
+    value:
+      heading: About BoxProtect
+      image: /src/assets/images/about/blocks/1/value/image.jpg
+      altTag: About BoxProtect
+      imagePlacement: right
+      description: >
+        BoxProtect Portable Storage is the leading provider of premium portable
+        storage solutions for both commercial and residential clients throughout
+        North Carolina. With a commitment to quality, convenience, and customer
+        satisfaction, we offer a range of portable storage options tailored to
+        meet the diverse needs of our clientele.
+
+
+        ## Mission Statement
+
+
+        Our mission at BoxProtect Portable Storage is to simplify storage
+        solutions by providing superior quality, secure, and convenient portable
+        storage units that exceed our customers' expectations.
+      button:
+        label: Get a Quote Today!
+        link: '#quote-form'
+      colors: '#0069e5/5'
