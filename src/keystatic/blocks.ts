@@ -132,7 +132,6 @@ export const faqs = {
         }),
         answer: fields.markdoc.inline({
           label: "Answer",
-          validation: { isRequired: true },
         }),
       }),
       {
