@@ -28,11 +28,6 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
-    build: {
-      rollupOptions: {
-        external: ["tslib"],
-      },
-    },
   },
   output: "static",
   adapter: netlify(),
