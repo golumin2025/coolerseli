@@ -27,7 +27,6 @@ export async function getStaticPaths() {
     };
   });
 }
-const { id }: any = Astro.params;
 const { data }: { data: any } = Astro.props;
 ---
 
@@ -56,7 +55,6 @@ const { data }: { data: any } = Astro.props;
           {item.discriminant === "cards" && <Cards {...item.value} />}
           {item.discriminant === "singleImage" && <SingleImage {...item.value} />}
           {item.discriminant === "serviceAreas" && <Locations {...item.value} />}
-
         </>
       ))
     }

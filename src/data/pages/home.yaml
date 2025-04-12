@@ -24,7 +24,7 @@ blocks:
             - title: Move it
               description: >
                 Tell us when you're done and we can move your box where you need
-                it.  
+                it.
         - title: Storage
           steps:
             - title: Order Your Box
@@ -43,6 +43,7 @@ blocks:
   - discriminant: cards
     value:
       title: ABOUT US
+      numberOfColumns: '2'
       cards:
         - image: /src/assets/images/home/blocks/3/value/cards/0/image.jpg
           title: Our Boxes
@@ -57,7 +58,9 @@ blocks:
   - discriminant: featuredImage
     value:
       image: /src/assets/images/home/blocks/4/value/image.avif
-      altTag: WHO WE ARE
+      altTag: Owner standing in front of an open container
+      imagePosition: object-center
+      imagePositionDesktop: md:object-top
       title: WHO WE ARE
       description: >-
         We are the Triangle's portable storage company for commercial clients:
@@ -89,6 +92,7 @@ blocks:
     value:
       title: 'NC Locations Served Include But Not Limited To:'
       sectionTitle: Locations
+      linkableLocations: false
       locations:
         - title: Raleigh
           link: link 1

@@ -12,6 +12,7 @@ blocks:
   - discriminant: serviceAreas
     value:
       title: Our Service Areas
+      linkableLocations: false
       locations:
         - title: Raleigh
           link: link 1
@@ -51,6 +52,7 @@ blocks:
       image: /src/assets/images/locations/blocks/2/value/image.jpg
       altTag: BoxProtect LLC - Service Areas & Locations
       imagePlacement: left
+      imageSize: h-full
       description: >
         BoxProtect Portable Storage is the leading provider of premium portable
         storage solutions for both commercial and residential clients throughout
@@ -140,7 +142,7 @@ blocks:
             - title: Move it
               description: >
                 Tell us when you're done and we can move your box where you need
-                it.  
+                it.
         - title: Storage
           steps:
             - title: Order Your Box

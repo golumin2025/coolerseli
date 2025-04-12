@@ -1,25 +1,21 @@
 ---
 import ImageMod from "./ImageMod.astro";
 
-const { altTag, image, title, description } = Astro.props;
+const { altTag, image, imagePosition, imagePositionDesktop, title, description } = Astro.props;
 ---
 
 <section class="relative my-12">
-    <ImageMod
-        src={image}
-        alt={altTag}
-        width={1920}
-        height={900}
-        className="h-[700px] object-cover w-full"
-    />
-    <div class="absolute inset-0 bg-black/20"></div>
+  <ImageMod
+    src={image}
+    alt={altTag}
+    width={4000}
+    height={1800}
+    className=`h-[725px] object-cover ${imagePositionDesktop} ${imagePosition} w-full`
+  />
+  <div class="absolute inset-0 bg-black/40"></div>
 
-    <div class="absolute top-1/2 right-16 transform -translate-y-1/2 max-w-md">
-        {
-            title && (
-                <h2 class="text-6xl text-white font-semibold mb-4">{title}</h2>
-            )
-        }
-        {description && <p class="text-2xl ml-8 text-white">{description}</p>}
-    </div>
+  <div class="absolute top-1/2 left-3 md:left-auto right-16 transform -translate-y-1/2 max-w-md">
+    {title && <h2 class="text-6xl text-white font-semibold mb-4">{title}</h2>}
+    {description && <p class="text-2xl ml-8 text-white">{description}</p>}
+  </div>
 </section>

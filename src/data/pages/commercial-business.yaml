@@ -16,6 +16,7 @@ blocks:
       image: /src/assets/images/commercial-business/blocks/1/value/image.jpg
       altTag: Get a quote
       imagePlacement: left
+      imageSize: h-[300px]
       description: >
         Need secure storage for your business? BoxProtect provides flexible and
         reliable commercial storage options to help your operations run
@@ -92,6 +93,7 @@ blocks:
     value:
       title: 'NC Locations Served Include But Not Limited To:'
       sectionTitle: Locations
+      linkableLocations: false
       locations:
         - title: Raleigh
           link: link 1

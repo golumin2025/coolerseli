@@ -96,6 +96,24 @@ export const featuredImage = {
       validation: { isRequired: true },
     }),
     altTag: fields.text({ label: "Alt Tag", validation: { isRequired: true } }),
+    imagePosition: fields.select({
+      label: "Position of the Image on Mobile Devices",
+      options: [
+        { label: "Top", value: "object-top" },
+        { label: "Center", value: "object-center" },
+        { label: "Bottom", value: "object-bottom" },
+      ],
+      defaultValue: "object-center",
+    }),
+    imagePositionDesktop: fields.select({
+      label: "Position of the Image on Desktop Devices",
+      options: [
+        { label: "Top", value: "md:object-top" },
+        { label: "Center", value: "md:object-center" },
+        { label: "Bottom", value: "md:object-bottom" },
+      ],
+      defaultValue: "md:object-center",
+    }),
     title: fields.text({ label: "Title" }),
     description: fields.text({ label: "Description", multiline: true }),
   }),
@@ -243,6 +261,15 @@ export const twoCol = {
       ],
       defaultValue: "left",
     }),
+    imageSize: fields.select({
+      label: "Size of the Image",
+      options: [
+        { label: "Small", value: "h-[300px]" },
+        { label: "Medium", value: "h-[500px]" },
+        { label: "Large", value: "h-full" },
+      ],
+      defaultValue: "h-[500px]",
+    }),
     description: fields.markdoc.inline({ label: "Description" }),
     button: fields.object({
       label: fields.text({ label: "Button Label" }),
@@ -263,6 +290,15 @@ export const cards = {
   label: "Cards With Title",
   schema: fields.object({
     title: fields.text({ label: "Title" }),
+    numberOfColumns: fields.select({
+      label: "Number of Columns",
+      options: [
+        { label: "Two", value: "2" },
+        { label: "Three", value: "3" },
+        { label: "Four", value: "4" },
+      ],
+      defaultValue: "3",
+    }),
     cards: fields.array(
       fields.object({
         image: fields.image({
@@ -305,6 +341,7 @@ export const serviceAreas = {
   schema: fields.object({
     title: fields.text({ label: "Title" }),
     sectionTitle: fields.text({ label: "Section Title" }),
+    linkableLocations: fields.checkbox({ label: "Linkable Locations", defaultValue: false }),
     locations: fields.array(
       fields.object({
         title: fields.text({ label: "Title" }),

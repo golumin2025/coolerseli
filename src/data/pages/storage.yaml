@@ -15,6 +15,7 @@ blocks:
       image: /src/assets/images/storage/blocks/1/value/image.jpg
       altTag: Get a quote
       imagePlacement: left
+      imageSize: h-[500px]
       description: >
         Explore BoxProtect's secure storage units and comprehensive storage
         services. Protect your valuables with our trusted solutions.

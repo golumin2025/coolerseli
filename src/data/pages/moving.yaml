@@ -15,12 +15,14 @@ blocks:
       image: /src/assets/images/moving/blocks/1/value/image.jpg
       altTag: Get a quote
       imagePlacement: left
+      imageSize: h-[300px]
       description: >
         Need storage for your move? BoxProtect offers secure and flexible
         options to safeguard your possessions during transition. Find the right
         solution now.
       button:
-        label: Get a quote
+        label: Get a Quote
+        link: /#get-quote
       colors: '#0069e5/5'
   - discriminant: singleImage
     value:
@@ -83,6 +85,7 @@ blocks:
     value:
       title: 'NC Locations Served Include But Not Limited To:'
       sectionTitle: Locations
+      linkableLocations: false
       locations:
         - title: Raleigh
           link: link 1
