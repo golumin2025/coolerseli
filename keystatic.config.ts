@@ -13,10 +13,10 @@ export default config({
     kind: import.meta.env.DEV ? "local" : "cloud",
   },
   cloud: {
-    project: "box-protect/marketing",
+    project: "service-master/marketing",
   },
   ui: {
-    brand: { name: "BoxProtect CMS" },
+    brand: { name: "Service Master CMS" },
   },
   collections: {
     blogs: collection(blogs),
