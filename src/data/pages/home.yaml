@@ -9,7 +9,7 @@ blocks:
     value:
       sliderImages:
         - image: /src/assets/images/home/blocks/0/value/sliderImages/0/image.jpg
-          title: FAST, NO HASSLE STORAGE 1-800-BOX-3333
+          title: FAST, NO HASSLE SERVICES
           description: BoxProtect Serves the Raleigh/Durham Triangle & Surrounding Counties
   - discriminant: twoColWithTabs
     value:

@@ -1,11 +1,11 @@
-businessName: Box Protect
+businessName: Service Master
 logo:
   logo: /src/assets/images/general/logo/logo.png
   favicon: /src/assets/images/general/logo/favicon.png
   footerLogo: /src/assets/images/general/logo/footerLogo.png
-primaryColor: 228, 15, 27
+primaryColor: 69, 153, 168
 secondaryColor: 47, 46, 46
-tertiaryColor: 228, 15, 27
+tertiaryColor: 69, 153, 168
 backgroundColor: "109,88,249\t"
 contactInformation:
   email: hello@golumin.io
