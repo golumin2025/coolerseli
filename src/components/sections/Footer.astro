@@ -4,7 +4,6 @@ import { getEntry } from "astro:content";
 const footer = await getEntry("singletons", "footer");
 const general = await getEntry("singletons", "general");
 const footerData = footer.data;
-console.log(general);
 ---
 
 <footer class="bg-[#f7f7f7] text-dark py-12 lg:py-16">

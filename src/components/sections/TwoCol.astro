@@ -4,7 +4,6 @@ import { marked } from "marked";
 
 const { heading, description, image, altTag, imagePlacement, imageSize, colors, button } =
   Astro.props;
-console.log(imageSize);
 let renderDescription = marked.parse(description);
 ---
 
