@@ -13,10 +13,10 @@ export default config({
     kind: import.meta.env.DEV ? "local" : "cloud",
   },
   cloud: {
-    project: "service-master/marketing",
+    project: "coolers-eli/marketing",
   },
   ui: {
-    brand: { name: "Service Master CMS" },
+    brand: { name: "Coolers USA CMS" },
   },
   collections: {
     blogs: collection(blogs),
