@@ -5,4 +5,6 @@ logo:
 fromEmail: hello@golumin.io
 fromEmailName: Lumin
 adminEmailRecipients: []
-clientEmailRecipientsBcc: []
+clientEmailRecipientsBcc:
+  - name: Lumin Marketing
+    email: marketing@golumin.io
